@@ -37,3 +37,7 @@ C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\ParkXpert\obj\Debug\net8.0-wi
 C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.FormKeuangan.resources
 C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.FormPembayaran.resources
 C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.FormRiwayat.resources
+E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.vbproj.AssemblyReference.cache
+E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.dll
+E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\refint\ParkXpert.dll
+E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.pdb

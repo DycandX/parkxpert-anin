@@ -1786,23 +1786,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {},
+    "C:\\Users\\zulvikar\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Documents\\Visual Studio 2022\\ParkXpert\\ParkXpert\\ParkXpert.vbproj",
+      "projectUniqueName": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\ParkXpert.vbproj",
       "projectName": "ParkXpert",
-      "projectPath": "C:\\Users\\HP\\Documents\\Visual Studio 2022\\ParkXpert\\ParkXpert\\ParkXpert.vbproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Documents\\Visual Studio 2022\\ParkXpert\\ParkXpert\\obj\\",
+      "projectPath": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\ParkXpert.vbproj",
+      "packagesPath": "C:\\Users\\zulvikar\\.nuget\\packages\\",
+      "outputPath": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\zulvikar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1811,7 +1811,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {
         "net8.0-windows7.0": {
