@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1D09E614-2E71-4A4F-A030-F2A23F4ED131}|ParkXpert\\ParkXpert.vbproj|e:\\_project\\parkxpert-anin\\parkxpert\\parkxpert\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1D09E614-2E71-4A4F-A030-F2A23F4ED131}|ParkXpert\\ParkXpert.vbproj|solutionrelative:parkxpert\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D09E614-2E71-4A4F-A030-F2A23F4ED131}|ParkXpert\\ParkXpert.vbproj|E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\parkxpert\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1D09E614-2E71-4A4F-A030-F2A23F4ED131}|ParkXpert\\ParkXpert.vbproj|solutionrelative:parkxpert\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.vb",
+              "DocumentMoniker": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\ParkXpert\\Form1.vb",
+              "RelativeDocumentMoniker": "ParkXpert\\Form1.vb",
+              "ToolTip": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\ParkXpert\\Form1.vb",
+              "RelativeToolTip": "ParkXpert\\Form1.vb",
+              "ViewState": "AQIAAAoAAAAAAAAAAIAwwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-05-31T03:18:14.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.vb [Design]",
+              "DocumentMoniker": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\ParkXpert\\Form1.vb",
+              "RelativeDocumentMoniker": "ParkXpert\\Form1.vb",
+              "ToolTip": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\ParkXpert\\Form1.vb [Design]",
+              "RelativeToolTip": "ParkXpert\\Form1.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-05-31T02:53:41.089Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
