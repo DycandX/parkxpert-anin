@@ -39,14 +39,16 @@ Public Class frmInput
     End Sub
 
     Private Sub btnSimpan_Click(sender As Object, e As EventArgs) Handles btnSimpan.Click
-        mainForm.ShowKarcisForm()
+        Dim idParkir As String = Guid.NewGuid().ToString() ' Menghasilkan ID Parkir
+        Dim jenis As String = cbKendaraan.Text
+        Dim noKendaraan As String = txtNopol.Text
+        Dim waktuMasuk As String = $"{DateTime.Now:dddd, dd MMMM yyyy HH:mm}"
+        Dim petugas As String = cbPetugas.Text
+
+        mainForm.ShowKarcisForm(idParkir, jenis, noKendaraan, waktuMasuk, petugas)
     End Sub
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         ClearInput()
-    End Sub
-
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-
     End Sub
 End Class

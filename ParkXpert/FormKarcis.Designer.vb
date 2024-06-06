@@ -26,12 +26,12 @@ Partial Class FormKarcis
         Panel1 = New Panel()
         GroupBox1 = New GroupBox()
         Panel2 = New Panel()
-        Label21 = New Label()
-        Label20 = New Label()
-        Label19 = New Label()
-        Label18 = New Label()
-        Label17 = New Label()
-        Label16 = New Label()
+        lblpetugas = New Label()
+        lblwaktu = New Label()
+        lblhari = New Label()
+        lblnopol = New Label()
+        lbljenis = New Label()
+        lblid = New Label()
         Label15 = New Label()
         Label14 = New Label()
         Label13 = New Label()
@@ -58,12 +58,12 @@ Partial Class FormKarcis
         Panel1.BackColor = Color.LightSteelBlue
         Panel1.BorderStyle = BorderStyle.FixedSingle
         Panel1.Controls.Add(GroupBox1)
-        Panel1.Controls.Add(Label21)
-        Panel1.Controls.Add(Label20)
-        Panel1.Controls.Add(Label19)
-        Panel1.Controls.Add(Label18)
-        Panel1.Controls.Add(Label17)
-        Panel1.Controls.Add(Label16)
+        Panel1.Controls.Add(lblpetugas)
+        Panel1.Controls.Add(lblwaktu)
+        Panel1.Controls.Add(lblhari)
+        Panel1.Controls.Add(lblnopol)
+        Panel1.Controls.Add(lbljenis)
+        Panel1.Controls.Add(lblid)
         Panel1.Controls.Add(Label15)
         Panel1.Controls.Add(Label14)
         Panel1.Controls.Add(Label13)
@@ -101,59 +101,59 @@ Partial Class FormKarcis
         Panel2.Size = New Size(120, 120)
         Panel2.TabIndex = 0
         ' 
-        ' Label21
+        ' lblpetugas
         ' 
-        Label21.AutoSize = True
-        Label21.Location = New Point(141, 123)
-        Label21.Name = "Label21"
-        Label21.Size = New Size(12, 15)
-        Label21.TabIndex = 19
-        Label21.Text = "-"
+        lblpetugas.AutoSize = True
+        lblpetugas.Location = New Point(141, 123)
+        lblpetugas.Name = "lblpetugas"
+        lblpetugas.Size = New Size(12, 15)
+        lblpetugas.TabIndex = 19
+        lblpetugas.Text = "-"
         ' 
-        ' Label20
+        ' lblwaktu
         ' 
-        Label20.AutoSize = True
-        Label20.Location = New Point(141, 106)
-        Label20.Name = "Label20"
-        Label20.Size = New Size(12, 15)
-        Label20.TabIndex = 18
-        Label20.Text = "-"
+        lblwaktu.AutoSize = True
+        lblwaktu.Location = New Point(141, 106)
+        lblwaktu.Name = "lblwaktu"
+        lblwaktu.Size = New Size(12, 15)
+        lblwaktu.TabIndex = 18
+        lblwaktu.Text = "-"
         ' 
-        ' Label19
+        ' lblhari
         ' 
-        Label19.AutoSize = True
-        Label19.Location = New Point(141, 89)
-        Label19.Name = "Label19"
-        Label19.Size = New Size(12, 15)
-        Label19.TabIndex = 17
-        Label19.Text = "-"
+        lblhari.AutoSize = True
+        lblhari.Location = New Point(141, 89)
+        lblhari.Name = "lblhari"
+        lblhari.Size = New Size(12, 15)
+        lblhari.TabIndex = 17
+        lblhari.Text = "-"
         ' 
-        ' Label18
+        ' lblnopol
         ' 
-        Label18.AutoSize = True
-        Label18.Location = New Point(141, 55)
-        Label18.Name = "Label18"
-        Label18.Size = New Size(12, 15)
-        Label18.TabIndex = 16
-        Label18.Text = "-"
+        lblnopol.AutoSize = True
+        lblnopol.Location = New Point(141, 55)
+        lblnopol.Name = "lblnopol"
+        lblnopol.Size = New Size(12, 15)
+        lblnopol.TabIndex = 16
+        lblnopol.Text = "-"
         ' 
-        ' Label17
+        ' lbljenis
         ' 
-        Label17.AutoSize = True
-        Label17.Location = New Point(141, 38)
-        Label17.Name = "Label17"
-        Label17.Size = New Size(12, 15)
-        Label17.TabIndex = 15
-        Label17.Text = "-"
+        lbljenis.AutoSize = True
+        lbljenis.Location = New Point(141, 38)
+        lbljenis.Name = "lbljenis"
+        lbljenis.Size = New Size(12, 15)
+        lbljenis.TabIndex = 15
+        lbljenis.Text = "-"
         ' 
-        ' Label16
+        ' lblid
         ' 
-        Label16.AutoSize = True
-        Label16.Location = New Point(141, 21)
-        Label16.Name = "Label16"
-        Label16.Size = New Size(12, 15)
-        Label16.TabIndex = 14
-        Label16.Text = "-"
+        lblid.AutoSize = True
+        lblid.Location = New Point(141, 21)
+        lblid.Name = "lblid"
+        lblid.Size = New Size(12, 15)
+        lblid.TabIndex = 14
+        lblid.Text = "-"
         ' 
         ' Label15
         ' 
@@ -369,12 +369,12 @@ Partial Class FormKarcis
     Friend WithEvents Label9 As Label
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents Label21 As Label
-    Friend WithEvents Label20 As Label
-    Friend WithEvents Label19 As Label
-    Friend WithEvents Label18 As Label
-    Friend WithEvents Label17 As Label
-    Friend WithEvents Label16 As Label
+    Friend WithEvents lblpetugas As Label
+    Friend WithEvents lblwaktu As Label
+    Friend WithEvents lblhari As Label
+    Friend WithEvents lblnopol As Label
+    Friend WithEvents lbljenis As Label
+    Friend WithEvents lblid As Label
     Friend WithEvents btnPrint As Button
     Friend WithEvents btnClear As Button
 End Class
