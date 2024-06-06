@@ -38,8 +38,15 @@ Public Class frmInput
         End If
     End Sub
 
+    Private Function GenerateParkirID() As String
+        Dim random As New Random()
+        Dim numbers As String = random.Next(10, 100).ToString("D2")
+        Dim letters As String = New String(Enumerable.Range(0, 3).[Select](Function(x) Chr(random.Next(65, 91))).ToArray()) ' Generate 3 letters
+        Return numbers & letters
+    End Function
+
     Private Sub btnSimpan_Click(sender As Object, e As EventArgs) Handles btnSimpan.Click
-        Dim idParkir As String = Guid.NewGuid().ToString() ' Menghasilkan ID Parkir
+        Dim idParkir As String = GenerateParkirID()
         Dim jenis As String = cbKendaraan.Text
         Dim noKendaraan As String = txtNopol.Text
         Dim waktuMasuk As String = $"{DateTime.Now:dddd, dd MMMM yyyy HH:mm}"

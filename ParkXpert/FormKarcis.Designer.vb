@@ -25,7 +25,7 @@ Partial Class FormKarcis
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormKarcis))
         Panel1 = New Panel()
         GroupBox1 = New GroupBox()
-        Panel2 = New Panel()
+        QRCode = New Panel()
         lblpetugas = New Label()
         lblwaktu = New Label()
         lblnopol = New Label()
@@ -68,175 +68,176 @@ Partial Class FormKarcis
         Panel1.Controls.Add(Label4)
         Panel1.Controls.Add(Label3)
         Panel1.Controls.Add(Label2)
-        Panel1.Location = New Point(14, 69)
-        Panel1.Margin = New Padding(3, 4, 3, 4)
+        Panel1.Location = New Point(12, 52)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(549, 219)
+        Panel1.Size = New Size(481, 165)
         Panel1.TabIndex = 0
         ' 
         ' GroupBox1
         ' 
-        GroupBox1.Controls.Add(Panel2)
+        GroupBox1.Controls.Add(QRCode)
         GroupBox1.Font = New Font("Lucida Console", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        GroupBox1.Location = New Point(362, 11)
-        GroupBox1.Margin = New Padding(3, 4, 3, 4)
+        GroupBox1.Location = New Point(317, 8)
         GroupBox1.Name = "GroupBox1"
-        GroupBox1.Padding = New Padding(3, 4, 3, 4)
-        GroupBox1.Size = New Size(166, 193)
+        GroupBox1.Size = New Size(145, 145)
         GroupBox1.TabIndex = 20
         GroupBox1.TabStop = False
         GroupBox1.Text = "Scan Disini"
         ' 
-        ' Panel2
+        ' QRCode
         ' 
-        Panel2.Location = New Point(14, 21)
-        Panel2.Margin = New Padding(3, 4, 3, 4)
-        Panel2.Name = "Panel2"
-        Panel2.Size = New Size(137, 160)
-        Panel2.TabIndex = 0
+        QRCode.Location = New Point(12, 16)
+        QRCode.Name = "QRCode"
+        QRCode.Size = New Size(120, 120)
+        QRCode.TabIndex = 0
         ' 
         ' lblpetugas
         ' 
         lblpetugas.AutoSize = True
-        lblpetugas.Location = New Point(161, 120)
+        lblpetugas.Font = New Font("Cambria", 9.75F)
+        lblpetugas.Location = New Point(141, 118)
         lblpetugas.Name = "lblpetugas"
-        lblpetugas.Size = New Size(15, 20)
+        lblpetugas.Size = New Size(11, 15)
         lblpetugas.TabIndex = 19
         lblpetugas.Text = "-"
         ' 
         ' lblwaktu
         ' 
         lblwaktu.AutoSize = True
-        lblwaktu.Location = New Point(161, 96)
+        lblwaktu.Font = New Font("Cambria", 9.75F)
+        lblwaktu.Location = New Point(141, 95)
         lblwaktu.Name = "lblwaktu"
-        lblwaktu.Size = New Size(15, 20)
+        lblwaktu.Size = New Size(11, 15)
         lblwaktu.TabIndex = 18
         lblwaktu.Text = "-"
         ' 
         ' lblnopol
         ' 
         lblnopol.AutoSize = True
-        lblnopol.Location = New Point(161, 73)
+        lblnopol.Font = New Font("Cambria", 9.75F)
+        lblnopol.Location = New Point(141, 72)
         lblnopol.Name = "lblnopol"
-        lblnopol.Size = New Size(15, 20)
+        lblnopol.Size = New Size(11, 15)
         lblnopol.TabIndex = 16
         lblnopol.Text = "-"
         ' 
         ' lbljenis
         ' 
         lbljenis.AutoSize = True
-        lbljenis.Location = New Point(161, 51)
+        lbljenis.Font = New Font("Cambria", 9.75F)
+        lbljenis.Location = New Point(141, 49)
         lbljenis.Name = "lbljenis"
-        lbljenis.Size = New Size(15, 20)
+        lbljenis.Size = New Size(11, 15)
         lbljenis.TabIndex = 15
         lbljenis.Text = "-"
         ' 
         ' lblid
         ' 
         lblid.AutoSize = True
-        lblid.Location = New Point(161, 28)
+        lblid.Font = New Font("Cambria", 9.75F)
+        lblid.Location = New Point(141, 26)
         lblid.Name = "lblid"
-        lblid.Size = New Size(15, 20)
+        lblid.Size = New Size(11, 15)
         lblid.TabIndex = 14
         lblid.Text = "-"
         ' 
         ' Label15
         ' 
         Label15.AutoSize = True
-        Label15.Font = New Font("Lucida Console", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label15.Location = New Point(141, 124)
+        Label15.Font = New Font("Lucida Console", 9.75F)
+        Label15.Location = New Point(122, 120)
         Label15.Name = "Label15"
-        Label15.Size = New Size(16, 15)
+        Label15.Size = New Size(15, 13)
         Label15.TabIndex = 13
         Label15.Text = ":"
         ' 
         ' Label12
         ' 
         Label12.AutoSize = True
-        Label12.Font = New Font("Lucida Console", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label12.Location = New Point(141, 100)
+        Label12.Font = New Font("Lucida Console", 9.75F)
+        Label12.Location = New Point(122, 97)
         Label12.Name = "Label12"
-        Label12.Size = New Size(16, 15)
+        Label12.Size = New Size(15, 13)
         Label12.TabIndex = 10
         Label12.Text = ":"
         ' 
         ' Label11
         ' 
         Label11.AutoSize = True
-        Label11.Font = New Font("Lucida Console", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label11.Location = New Point(141, 77)
+        Label11.Font = New Font("Lucida Console", 9.75F)
+        Label11.Location = New Point(122, 74)
         Label11.Name = "Label11"
-        Label11.Size = New Size(16, 15)
+        Label11.Size = New Size(15, 13)
         Label11.TabIndex = 9
         Label11.Text = ":"
         ' 
         ' Label10
         ' 
         Label10.AutoSize = True
-        Label10.Font = New Font("Lucida Console", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label10.Location = New Point(141, 55)
+        Label10.Font = New Font("Lucida Console", 9.75F)
+        Label10.Location = New Point(122, 51)
         Label10.Name = "Label10"
-        Label10.Size = New Size(16, 15)
+        Label10.Size = New Size(15, 13)
         Label10.TabIndex = 8
         Label10.Text = ":"
         ' 
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.Font = New Font("Lucida Console", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label9.Location = New Point(141, 33)
+        Label9.Font = New Font("Lucida Console", 9.75F)
+        Label9.Location = New Point(122, 28)
         Label9.Name = "Label9"
-        Label9.Size = New Size(16, 15)
+        Label9.Size = New Size(15, 13)
         Label9.TabIndex = 7
         Label9.Text = ":"
         ' 
         ' Label8
         ' 
         Label8.AutoSize = True
-        Label8.Font = New Font("Lucida Console", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label8.Location = New Point(14, 124)
+        Label8.Font = New Font("Lucida Console", 9.75F)
+        Label8.Location = New Point(12, 120)
         Label8.Name = "Label8"
-        Label8.Size = New Size(70, 15)
+        Label8.Size = New Size(63, 13)
         Label8.TabIndex = 6
         Label8.Text = "Petugas"
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Font = New Font("Lucida Console", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(14, 100)
+        Label5.Font = New Font("Lucida Console", 9.75F)
+        Label5.Location = New Point(12, 97)
         Label5.Name = "Label5"
-        Label5.Size = New Size(106, 15)
+        Label5.Size = New Size(95, 13)
         Label5.TabIndex = 3
         Label5.Text = "Waktu Masuk"
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Lucida Console", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(14, 77)
+        Label4.Font = New Font("Lucida Console", 9.75F)
+        Label4.Location = New Point(12, 74)
         Label4.Name = "Label4"
-        Label4.Size = New Size(124, 15)
+        Label4.Size = New Size(111, 13)
         Label4.TabIndex = 2
         Label4.Text = "No. Kendaraan"
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Lucida Console", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(14, 55)
+        Label3.Font = New Font("Lucida Console", 9.75F)
+        Label3.Location = New Point(12, 51)
         Label3.Name = "Label3"
-        Label3.Size = New Size(52, 15)
+        Label3.Size = New Size(47, 13)
         Label3.TabIndex = 1
         Label3.Text = "Jenis"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Lucida Console", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(14, 32)
+        Label2.Font = New Font("Lucida Console", 9.75F)
+        Label2.Location = New Point(12, 28)
         Label2.Name = "Label2"
-        Label2.Size = New Size(88, 15)
+        Label2.Size = New Size(79, 13)
         Label2.TabIndex = 0
         Label2.Text = "ID Parkir"
         ' 
@@ -245,9 +246,9 @@ Partial Class FormKarcis
         Label1.AutoSize = True
         Label1.Font = New Font("Cambria", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(128, 13)
+        Label1.Location = New Point(112, 10)
         Label1.Name = "Label1"
-        Label1.Size = New Size(345, 40)
+        Label1.Size = New Size(282, 32)
         Label1.TabIndex = 1
         Label1.Text = "K A R C I S   P A R K I R"
         ' 
@@ -256,10 +257,9 @@ Partial Class FormKarcis
         btnPrint.FlatStyle = FlatStyle.Flat
         btnPrint.Font = New Font("Georgia", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnPrint.ForeColor = Color.White
-        btnPrint.Location = New Point(360, 300)
-        btnPrint.Margin = New Padding(3, 4, 3, 4)
+        btnPrint.Location = New Point(315, 225)
         btnPrint.Name = "btnPrint"
-        btnPrint.Size = New Size(93, 39)
+        btnPrint.Size = New Size(81, 29)
         btnPrint.TabIndex = 2
         btnPrint.Text = "Print"
         btnPrint.UseVisualStyleBackColor = True
@@ -269,27 +269,25 @@ Partial Class FormKarcis
         btnClear.FlatStyle = FlatStyle.Flat
         btnClear.Font = New Font("Georgia", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnClear.ForeColor = Color.White
-        btnClear.Location = New Point(470, 300)
-        btnClear.Margin = New Padding(3, 4, 3, 4)
+        btnClear.Location = New Point(411, 225)
         btnClear.Name = "btnClear"
-        btnClear.Size = New Size(93, 39)
+        btnClear.Size = New Size(81, 29)
         btnClear.TabIndex = 3
         btnClear.Text = "Clear"
         btnClear.UseVisualStyleBackColor = True
         ' 
         ' FormKarcis
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.MidnightBlue
-        ClientSize = New Size(577, 352)
+        ClientSize = New Size(505, 264)
         Controls.Add(btnClear)
         Controls.Add(btnPrint)
         Controls.Add(Label1)
         Controls.Add(Panel1)
         FormBorderStyle = FormBorderStyle.None
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
-        Margin = New Padding(3, 4, 3, 4)
         Name = "FormKarcis"
         Text = "FormKarcis"
         Panel1.ResumeLayout(False)
@@ -312,7 +310,7 @@ Partial Class FormKarcis
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Panel2 As Panel
+    Friend WithEvents QRCode As Panel
     Friend WithEvents lblpetugas As Label
     Friend WithEvents lblwaktu As Label
     Friend WithEvents lblnopol As Label

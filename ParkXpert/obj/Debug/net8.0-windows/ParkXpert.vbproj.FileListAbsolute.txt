@@ -78,3 +78,44 @@ E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\refint\ParkXpert.d
 E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.pdb
 E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.genruntimeconfig.cache
 E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ref\ParkXpert.dll
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\bin\Debug\net8.0-windows\ParkXpert.exe
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\bin\Debug\net8.0-windows\ParkXpert.deps.json
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\bin\Debug\net8.0-windows\ParkXpert.runtimeconfig.json
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\bin\Debug\net8.0-windows\ParkXpert.dll
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\bin\Debug\net8.0-windows\ParkXpert.pdb
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.vbproj.AssemblyReference.cache
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.FormKarcis.resources
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.FormKeuangan.resources
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.frmLogin.resources
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.FormPembayaran.resources
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.FormRiwayat.resources
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.frmUtama.resources
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.FormWelcome.resources
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.frmInput.resources
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.Resources.resources
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.vbproj.GenerateResource.cache
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.AssemblyInfoInputs.cache
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.AssemblyInfo.vb
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.vbproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.sourcelink.json
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.vbproj.Up2Date
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.dll
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\obj\Debug\net8.0-windows\refint\ParkXpert.dll
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.pdb
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.genruntimeconfig.cache
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\obj\Debug\net8.0-windows\ref\ParkXpert.dll
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\bin\Debug\net8.0-windows\QRCoder.dll
