@@ -43,7 +43,6 @@ Partial Class FormKarcis
         Label2 = New Label()
         Label1 = New Label()
         btnPrint = New Button()
-        btnClear = New Button()
         Panel1.SuspendLayout()
         GroupBox1.SuspendLayout()
         SuspendLayout()
@@ -257,24 +256,12 @@ Partial Class FormKarcis
         btnPrint.FlatStyle = FlatStyle.Flat
         btnPrint.Font = New Font("Georgia", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnPrint.ForeColor = Color.White
-        btnPrint.Location = New Point(315, 225)
+        btnPrint.Location = New Point(411, 225)
         btnPrint.Name = "btnPrint"
         btnPrint.Size = New Size(81, 29)
         btnPrint.TabIndex = 2
         btnPrint.Text = "Print"
         btnPrint.UseVisualStyleBackColor = True
-        ' 
-        ' btnClear
-        ' 
-        btnClear.FlatStyle = FlatStyle.Flat
-        btnClear.Font = New Font("Georgia", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnClear.ForeColor = Color.White
-        btnClear.Location = New Point(411, 225)
-        btnClear.Name = "btnClear"
-        btnClear.Size = New Size(81, 29)
-        btnClear.TabIndex = 3
-        btnClear.Text = "Clear"
-        btnClear.UseVisualStyleBackColor = True
         ' 
         ' FormKarcis
         ' 
@@ -282,7 +269,6 @@ Partial Class FormKarcis
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.MidnightBlue
         ClientSize = New Size(505, 264)
-        Controls.Add(btnClear)
         Controls.Add(btnPrint)
         Controls.Add(Label1)
         Controls.Add(Panel1)
@@ -317,5 +303,4 @@ Partial Class FormKarcis
     Friend WithEvents lbljenis As Label
     Friend WithEvents lblid As Label
     Friend WithEvents btnPrint As Button
-    Friend WithEvents btnClear As Button
 End Class
