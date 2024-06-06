@@ -33,7 +33,7 @@ Public Class frmUtama
         frmInput.Show()
     End Sub
 
-    Public Sub ShowKarcisForm()
+    Public Sub ShowKarcisForm(idParkir, jenis, noKendaraan, waktuMasuk, petugas)
         Dim frmKarcis As New FormKarcis()
         frmKarcis.TopLevel = False
         frmKarcis.FormBorderStyle = FormBorderStyle.None
@@ -41,5 +41,7 @@ Public Class frmUtama
         Body.Controls.Clear()
         Body.Controls.Add(frmKarcis)
         frmKarcis.Show()
+
+        frmKarcis.TampilkanData(idParkir, jenis, noKendaraan, waktuMasuk, petugas)
     End Sub
 End Class

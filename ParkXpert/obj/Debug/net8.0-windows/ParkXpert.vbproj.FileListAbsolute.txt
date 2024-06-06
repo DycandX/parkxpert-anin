@@ -38,3 +38,43 @@ C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\ParkXpert\obj\Debug\net8.0-wi
 C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.FormPembayaran.resources
 C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.FormRiwayat.resources
 C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.sourcelink.json
+E:\_PROJECT\ParkXpert-anin\ParkXpert\bin\Debug\net8.0-windows\ParkXpert.exe
+E:\_PROJECT\ParkXpert-anin\ParkXpert\bin\Debug\net8.0-windows\ParkXpert.deps.json
+E:\_PROJECT\ParkXpert-anin\ParkXpert\bin\Debug\net8.0-windows\ParkXpert.runtimeconfig.json
+E:\_PROJECT\ParkXpert-anin\ParkXpert\bin\Debug\net8.0-windows\ParkXpert.dll
+E:\_PROJECT\ParkXpert-anin\ParkXpert\bin\Debug\net8.0-windows\ParkXpert.pdb
+E:\_PROJECT\ParkXpert-anin\ParkXpert\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+E:\_PROJECT\ParkXpert-anin\ParkXpert\bin\Debug\net8.0-windows\Google.Protobuf.dll
+E:\_PROJECT\ParkXpert-anin\ParkXpert\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+E:\_PROJECT\ParkXpert-anin\ParkXpert\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+E:\_PROJECT\ParkXpert-anin\ParkXpert\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+E:\_PROJECT\ParkXpert-anin\ParkXpert\bin\Debug\net8.0-windows\MySql.Data.dll
+E:\_PROJECT\ParkXpert-anin\ParkXpert\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+E:\_PROJECT\ParkXpert-anin\ParkXpert\bin\Debug\net8.0-windows\ZstdSharp.dll
+E:\_PROJECT\ParkXpert-anin\ParkXpert\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+E:\_PROJECT\ParkXpert-anin\ParkXpert\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+E:\_PROJECT\ParkXpert-anin\ParkXpert\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+E:\_PROJECT\ParkXpert-anin\ParkXpert\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+E:\_PROJECT\ParkXpert-anin\ParkXpert\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.vbproj.AssemblyReference.cache
+E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.FormKarcis.resources
+E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.FormKeuangan.resources
+E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.frmLogin.resources
+E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.FormPembayaran.resources
+E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.FormRiwayat.resources
+E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.frmUtama.resources
+E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.FormWelcome.resources
+E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.frmInput.resources
+E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.Resources.resources
+E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.vbproj.GenerateResource.cache
+E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.GeneratedMSBuildEditorConfig.editorconfig
+E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.AssemblyInfoInputs.cache
+E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.AssemblyInfo.vb
+E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.vbproj.CoreCompileInputs.cache
+E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.sourcelink.json
+E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.vbproj.Up2Date
+E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.dll
+E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\refint\ParkXpert.dll
+E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.pdb
+E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.genruntimeconfig.cache
+E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ref\ParkXpert.dll
