@@ -66,4 +66,14 @@ Public Class frmUtama
             MessageBox.Show("Error: " & ex.Message)
         End Try
     End Sub
+
+    Private Sub TampilkanFormPembayaran()
+        Dim frmPembayaran As New FormPembayaran()
+        frmPembayaran.TopLevel = False
+        frmPembayaran.FormBorderStyle = FormBorderStyle.None
+        frmPembayaran.Location = New Point(300, 100)
+        Body.Controls.Clear()
+        Body.Controls.Add(frmPembayaran)
+        frmPembayaran.Show()
+    End Sub
 End Class
