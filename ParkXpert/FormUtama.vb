@@ -4,7 +4,7 @@ Public Class frmUtama
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
         koneksi()
-        CMD = New MySqlCommand("UPDATE pegawai set Status = '" & "Offline" & "' WHERE BINARY ID = '" & profilUname.Text & "'", conn)
+        CMD = New MySqlCommand("UPDATE pegawai set Status = 'Offline' WHERE BINARY ID = '" & profilUname.Text & "'", conn)
         CMD.ExecuteNonQuery()
         Me.Hide()
         frmLogin.ResetTextBox()
@@ -33,15 +33,37 @@ Public Class frmUtama
         frmInput.Show()
     End Sub
 
-    Public Sub ShowKarcisForm(idParkir, jenis, noKendaraan, waktuMasuk, petugas)
-        Dim frmKarcis As New FormKarcis()
-        frmKarcis.TopLevel = False
-        frmKarcis.FormBorderStyle = FormBorderStyle.None
-        frmKarcis.Location = New Point(250, 150)
-        Body.Controls.Clear()
-        Body.Controls.Add(frmKarcis)
-        frmKarcis.Show()
+    Public Sub ShowKarcisForm(idParkir As String, jenis As String, noKendaraan As String, waktuMasuk As String, petugas As String)
+        Try
+            Dim frmKarcis As New FormKarcis()
 
-        frmKarcis.TampilkanData(idParkir, jenis, noKendaraan, waktuMasuk, petugas)
+            ' Set data on frmKarcis
+            frmKarcis.lblid.Text = idParkir
+            frmKarcis.lbljenis.Text = jenis
+            frmKarcis.lblnopol.Text = noKendaraan
+            frmKarcis.lblwaktu.Text = waktuMasuk
+            frmKarcis.lblpetugas.Text = petugas
+
+            ' Tampilkan form sebagai dialog modal
+            frmKarcis.ShowDialog()
+
+        Catch ex As Exception
+            MessageBox.Show("Error: " & ex.Message)
+        End Try
+    End Sub
+
+    Public Sub UpdateQRCodePanel(qrCodeImage As Bitmap)
+        Try
+            Dim qrPanel As Panel = Me.Controls.OfType(Of Panel)().FirstOrDefault(Function(p) p.Name = "panelQRCode")
+
+            If qrPanel IsNot Nothing Then
+                qrPanel.BackgroundImage = qrCodeImage
+                qrPanel.BackgroundImageLayout = ImageLayout.Zoom
+            Else
+                MessageBox.Show("QR Code panel not found.")
+            End If
+        Catch ex As Exception
+            MessageBox.Show("Error: " & ex.Message)
+        End Try
     End Sub
 End Class

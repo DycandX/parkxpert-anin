@@ -40,6 +40,7 @@ Partial Class frmUtama
         btnexit = New Button()
         btnmin = New Button()
         Body = New Panel()
+        CheckBox1 = New CheckBox()
         Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel2.SuspendLayout()
@@ -128,6 +129,7 @@ Partial Class frmUtama
         ' Panel2
         ' 
         Panel2.BackColor = Color.MidnightBlue
+        Panel2.Controls.Add(CheckBox1)
         Panel2.Controls.Add(btnInput)
         Panel2.Location = New Point(0, 140)
         Panel2.Name = "Panel2"
@@ -230,6 +232,24 @@ Partial Class frmUtama
         Body.Size = New Size(1000, 617)
         Body.TabIndex = 4
         ' 
+        ' CheckBox1
+        ' 
+        CheckBox1.Appearance = Appearance.Button
+        CheckBox1.AutoSize = True
+        CheckBox1.BackgroundImageLayout = ImageLayout.None
+        CheckBox1.FlatStyle = FlatStyle.Flat
+        CheckBox1.Font = New Font("Sitka Small", 15.7499981F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        CheckBox1.ForeColor = Color.White
+        CheckBox1.Image = CType(resources.GetObject("CheckBox1.Image"), Image)
+        CheckBox1.ImageAlign = ContentAlignment.MiddleLeft
+        CheckBox1.Location = New Point(-2, 49)
+        CheckBox1.Name = "CheckBox1"
+        CheckBox1.Size = New Size(305, 46)
+        CheckBox1.TabIndex = 2
+        CheckBox1.Text = "INPUT KENDARAAN     "
+        CheckBox1.TextImageRelation = TextImageRelation.ImageBeforeText
+        CheckBox1.UseVisualStyleBackColor = False
+        ' 
         ' frmUtama
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -274,4 +294,5 @@ Partial Class frmUtama
     Friend WithEvents Panel7 As Panel
     Friend WithEvents Panel8 As Panel
     Friend WithEvents Body As Panel
+    Friend WithEvents CheckBox1 As CheckBox
 End Class
