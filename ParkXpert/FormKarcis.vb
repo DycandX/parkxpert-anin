@@ -54,14 +54,33 @@ Public Class FormKarcis
     End Sub
 
     Private Sub PrintImage(filePath As String)
-        ' This method sends the image to the printer
+        ' Create a PrintDocument object
         Dim printDoc As New Printing.PrintDocument()
-        AddHandler printDoc.PrintPage, Sub(sender As Object, e As Printing.PrintPageEventArgs)
-                                           Dim img As Image = Image.FromFile(filePath)
-                                           e.Graphics.DrawImage(img, 0, 0, img.Width, img.Height)
-                                           e.HasMorePages = False
-                                       End Sub
-        printDoc.Print()
+
+        ' Create a PrintDialog object
+        Dim printDialog As New PrintDialog()
+
+        ' Set the Document property of the PrintDialog to the PrintDocument
+        printDialog.Document = printDoc
+
+        ' Show the PrintDialog and check if the user clicks OK
+        If printDialog.ShowDialog() = DialogResult.OK Then
+            ' If the user clicked OK, proceed with printing
+
+            ' Assign the selected printer to the PrintDocument
+            printDoc.PrinterSettings = printDialog.PrinterSettings
+
+            ' Define the PrintPage event handler
+            AddHandler printDoc.PrintPage, Sub(sender As Object, e As Printing.PrintPageEventArgs)
+                                               Dim img As Image = Image.FromFile(filePath)
+                                               e.Graphics.DrawImage(img, 0, 0, img.Width, img.Height)
+                                               e.HasMorePages = False
+                                           End Sub
+
+            ' Start printing
+            printDoc.Print()
+        End If
     End Sub
+
 
 End Class
