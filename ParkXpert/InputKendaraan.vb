@@ -49,7 +49,7 @@ Public Class frmInput
         Dim idParkir As String = GenerateParkirID()
         Dim jenis As String = cbKendaraan.Text
         Dim noKendaraan As String = txtNopol.Text
-        Dim waktuMasuk As String = $"{DateTime.Now:dddd, dd MMMM yyyy HH:mm}"
+        Dim waktuMasuk As String = $"{DateTime.Now:dddd, dd MMMM yyyy HH:mm:ss}"
         Dim petugas As String = cbPetugas.Text
 
         mainForm.ShowKarcisForm(idParkir, jenis, noKendaraan, waktuMasuk, petugas)

@@ -59,6 +59,8 @@ Partial Class FormPembayaran
         Panel3 = New Panel()
         Label19 = New Label()
         GroupBox1 = New GroupBox()
+        dtpKeluar = New DateTimePicker()
+        cbnopol = New ComboBox()
         lbltagihan = New Label()
         lbldurasi = New Label()
         lblmasuk = New Label()
@@ -77,8 +79,6 @@ Partial Class FormPembayaran
         Label3 = New Label()
         Label2 = New Label()
         Label1 = New Label()
-        cbnopol = New ComboBox()
-        dtpKeluar = New DateTimePicker()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
         Panel3.SuspendLayout()
@@ -497,6 +497,22 @@ Partial Class FormPembayaran
         GroupBox1.TabStop = False
         GroupBox1.Text = "Tagihan"
         ' 
+        ' dtpKeluar
+        ' 
+        dtpKeluar.Font = New Font("Cambria", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        dtpKeluar.Location = New Point(128, 178)
+        dtpKeluar.Name = "dtpKeluar"
+        dtpKeluar.Size = New Size(182, 23)
+        dtpKeluar.TabIndex = 21
+        ' 
+        ' cbnopol
+        ' 
+        cbnopol.FormattingEnabled = True
+        cbnopol.Location = New Point(128, 27)
+        cbnopol.Name = "cbnopol"
+        cbnopol.Size = New Size(182, 27)
+        cbnopol.TabIndex = 20
+        ' 
         ' lbltagihan
         ' 
         lbltagihan.AutoSize = True
@@ -676,22 +692,6 @@ Partial Class FormPembayaran
         Label1.Size = New Size(691, 28)
         Label1.TabIndex = 6
         Label1.Text = "----------------------------- P E M B A Y A R A N -----------------------------"
-        ' 
-        ' cbnopol
-        ' 
-        cbnopol.FormattingEnabled = True
-        cbnopol.Location = New Point(128, 27)
-        cbnopol.Name = "cbnopol"
-        cbnopol.Size = New Size(182, 27)
-        cbnopol.TabIndex = 20
-        ' 
-        ' dtpKeluar
-        ' 
-        dtpKeluar.Font = New Font("Cambria", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        dtpKeluar.Location = New Point(128, 178)
-        dtpKeluar.Name = "dtpKeluar"
-        dtpKeluar.Size = New Size(182, 25)
-        dtpKeluar.TabIndex = 21
         ' 
         ' FormPembayaran
         ' 
