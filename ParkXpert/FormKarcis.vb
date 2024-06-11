@@ -1,4 +1,6 @@
-﻿Imports System.Drawing.Imaging
+﻿Imports QRCoder
+Imports System.Drawing.Imaging
+Imports System.Security.Cryptography
 Public Class FormKarcis
     Public Property MainFormPanel As Panel
 
@@ -8,7 +10,23 @@ Public Class FormKarcis
         lblnopol.Text = $"{noKendaraan}"
         lblwaktu.Text = $"{waktuMasuk}"
         lblpetugas.Text = $"{petugas}"
+
+        Dim qrContent As String = $"{idParkir}|{jenis}|{noKendaraan}|{waktuMasuk}|{petugas}"
+        Dim qrCodeImage As Bitmap = GenerateQRCode(qrContent)
+        pbQRCode.Image = qrCodeImage
+        pbQRCode.SizeMode = PictureBoxSizeMode.StretchImage
     End Sub
+
+    Private Function GenerateQRCode(content As String) As Bitmap
+        Using qrGenerator As New QRCodeGenerator()
+            Using qrCodeData As QRCodeData = qrGenerator.CreateQrCode(content, QRCodeGenerator.ECCLevel.Q)
+                Using qrCode As New QRCode(qrCodeData)
+                    Dim qrCodeImage As Bitmap = qrCode.GetGraphic(20)
+                    Return qrCodeImage
+                End Using
+            End Using
+        End Using
+    End Function
 
     Private Sub btnPrint_Click(sender As Object, e As EventArgs) Handles btnPrint.Click
         Dim sfd As New SaveFileDialog
@@ -24,6 +42,7 @@ Public Class FormKarcis
     End Sub
     Private Sub SaveFormAsImage(filePath As String)
         ' Capture the form as a bitmap
+
         Dim bmp As New Bitmap(Me.Width, Me.Height)
         Me.DrawToBitmap(bmp, New Rectangle(0, 0, Me.Width, Me.Height))
 
@@ -44,4 +63,5 @@ Public Class FormKarcis
                                        End Sub
         printDoc.Print()
     End Sub
+
 End Class

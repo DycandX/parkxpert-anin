@@ -25,7 +25,7 @@ Partial Class FormKarcis
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormKarcis))
         Panel1 = New Panel()
         GroupBox1 = New GroupBox()
-        QRCode = New Panel()
+        pbQRCode = New PictureBox()
         lblpetugas = New Label()
         lblwaktu = New Label()
         lblnopol = New Label()
@@ -45,6 +45,7 @@ Partial Class FormKarcis
         btnPrint = New Button()
         Panel1.SuspendLayout()
         GroupBox1.SuspendLayout()
+        CType(pbQRCode, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Panel1
@@ -74,7 +75,7 @@ Partial Class FormKarcis
         ' 
         ' GroupBox1
         ' 
-        GroupBox1.Controls.Add(QRCode)
+        GroupBox1.Controls.Add(pbQRCode)
         GroupBox1.Font = New Font("Lucida Console", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         GroupBox1.Location = New Point(317, 8)
         GroupBox1.Name = "GroupBox1"
@@ -83,12 +84,13 @@ Partial Class FormKarcis
         GroupBox1.TabStop = False
         GroupBox1.Text = "Scan Disini"
         ' 
-        ' QRCode
+        ' pbQRCode
         ' 
-        QRCode.Location = New Point(12, 16)
-        QRCode.Name = "QRCode"
-        QRCode.Size = New Size(120, 120)
-        QRCode.TabIndex = 0
+        pbQRCode.Location = New Point(13, 17)
+        pbQRCode.Name = "pbQRCode"
+        pbQRCode.Size = New Size(120, 120)
+        pbQRCode.TabIndex = 0
+        pbQRCode.TabStop = False
         ' 
         ' lblpetugas
         ' 
@@ -279,6 +281,7 @@ Partial Class FormKarcis
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
         GroupBox1.ResumeLayout(False)
+        CType(pbQRCode, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -296,11 +299,11 @@ Partial Class FormKarcis
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents QRCode As Panel
     Friend WithEvents lblpetugas As Label
     Friend WithEvents lblwaktu As Label
     Friend WithEvents lblnopol As Label
     Friend WithEvents lbljenis As Label
     Friend WithEvents lblid As Label
     Friend WithEvents btnPrint As Button
+    Friend WithEvents pbQRCode As PictureBox
 End Class
