@@ -35,8 +35,15 @@ Public Class FormKarcis
         sfd.FileName = "Karcis_" & DateTime.Now.ToString("yyyyMMdd_HHmmss") & ".jpg"
 
         If sfd.ShowDialog() = DialogResult.OK Then
+            ' Sembunyikan tombol cetak sebelum membuat cetakan gambar
+            btnPrint.Visible = False
+
             SaveFormAsImage(sfd.FileName)
             MessageBox.Show("Karcis has been saved and printed successfully.", "Print Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+            ' Tampilkan kembali tombol cetak setelah proses pencetakan selesai
+            btnPrint.Visible = True
+
             Me.Close()
         End If
     End Sub
