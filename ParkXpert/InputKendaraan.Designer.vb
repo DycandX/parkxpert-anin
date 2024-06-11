@@ -59,27 +59,29 @@ Partial Class frmInput
         Panel2.Controls.Add(cbPetugas)
         Panel2.Controls.Add(txtNopol)
         Panel2.Controls.Add(cbKendaraan)
-        Panel2.Location = New Point(12, 85)
+        Panel2.Location = New Point(14, 113)
+        Panel2.Margin = New Padding(3, 4, 3, 4)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(354, 322)
+        Panel2.Size = New Size(404, 429)
         Panel2.TabIndex = 0
         ' 
         ' Label6
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Cambria", 11.25F)
-        Label6.Location = New Point(15, 154)
+        Label6.Location = New Point(17, 205)
         Label6.Name = "Label6"
-        Label6.Size = New Size(38, 17)
+        Label6.Size = New Size(48, 22)
         Label6.TabIndex = 12
         Label6.Text = "Tarif"
         ' 
         ' txttarif
         ' 
         txttarif.BorderStyle = BorderStyle.FixedSingle
-        txttarif.Location = New Point(128, 152)
+        txttarif.Location = New Point(146, 203)
+        txttarif.Margin = New Padding(3, 4, 3, 4)
         txttarif.Name = "txttarif"
-        txttarif.Size = New Size(200, 23)
+        txttarif.Size = New Size(228, 27)
         txttarif.TabIndex = 11
         ' 
         ' Label5
@@ -89,10 +91,10 @@ Partial Class frmInput
         Label5.BorderStyle = BorderStyle.FixedSingle
         Label5.Font = New Font("Cambria", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label5.ForeColor = Color.Black
-        Label5.Location = New Point(75, 17)
+        Label5.Location = New Point(86, 23)
         Label5.Name = "Label5"
-        Label5.Padding = New Padding(10, 5, 10, 5)
-        Label5.Size = New Size(204, 34)
+        Label5.Padding = New Padding(11, 7, 11, 7)
+        Label5.Size = New Size(253, 44)
         Label5.TabIndex = 1
         Label5.Text = "INPUT KENDARAAN"
         ' 
@@ -100,9 +102,10 @@ Partial Class frmInput
         ' 
         DateTimePicker1.CustomFormat = "    dd / MM / yyyy  -  HH : mm : ss"
         DateTimePicker1.Format = DateTimePickerFormat.Custom
-        DateTimePicker1.Location = New Point(128, 231)
+        DateTimePicker1.Location = New Point(146, 308)
+        DateTimePicker1.Margin = New Padding(3, 4, 3, 4)
         DateTimePicker1.Name = "DateTimePicker1"
-        DateTimePicker1.Size = New Size(200, 23)
+        DateTimePicker1.Size = New Size(228, 27)
         DateTimePicker1.TabIndex = 10
         ' 
         ' btnClear
@@ -112,9 +115,10 @@ Partial Class frmInput
         btnClear.FlatStyle = FlatStyle.Popup
         btnClear.Font = New Font("Cambria", 9.75F, FontStyle.Bold)
         btnClear.ForeColor = Color.White
-        btnClear.Location = New Point(253, 279)
+        btnClear.Location = New Point(289, 372)
+        btnClear.Margin = New Padding(3, 4, 3, 4)
         btnClear.Name = "btnClear"
-        btnClear.Size = New Size(75, 23)
+        btnClear.Size = New Size(86, 31)
         btnClear.TabIndex = 9
         btnClear.Text = "CLEAR"
         btnClear.UseVisualStyleBackColor = False
@@ -126,9 +130,10 @@ Partial Class frmInput
         btnSimpan.FlatStyle = FlatStyle.Popup
         btnSimpan.Font = New Font("Cambria", 9.75F, FontStyle.Bold)
         btnSimpan.ForeColor = Color.White
-        btnSimpan.Location = New Point(128, 279)
+        btnSimpan.Location = New Point(146, 372)
+        btnSimpan.Margin = New Padding(3, 4, 3, 4)
         btnSimpan.Name = "btnSimpan"
-        btnSimpan.Size = New Size(75, 23)
+        btnSimpan.Size = New Size(86, 31)
         btnSimpan.TabIndex = 8
         btnSimpan.Text = "SIMPAN"
         btnSimpan.UseVisualStyleBackColor = False
@@ -137,9 +142,9 @@ Partial Class frmInput
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Cambria", 11.25F)
-        Label4.Location = New Point(15, 233)
+        Label4.Location = New Point(17, 311)
         Label4.Name = "Label4"
-        Label4.Size = New Size(93, 17)
+        Label4.Size = New Size(121, 22)
         Label4.TabIndex = 7
         Label4.Text = "Waktu Masuk"
         ' 
@@ -147,9 +152,9 @@ Partial Class frmInput
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Cambria", 11.25F)
-        Label3.Location = New Point(15, 193)
+        Label3.Location = New Point(17, 257)
         Label3.Name = "Label3"
-        Label3.Size = New Size(80, 17)
+        Label3.Size = New Size(102, 22)
         Label3.TabIndex = 6
         Label3.Text = "Plat Nomor"
         ' 
@@ -157,9 +162,9 @@ Partial Class frmInput
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Cambria", 11.25F)
-        Label2.Location = New Point(15, 116)
+        Label2.Location = New Point(17, 155)
         Label2.Name = "Label2"
-        Label2.Size = New Size(108, 17)
+        Label2.Size = New Size(142, 22)
         Label2.TabIndex = 5
         Label2.Text = "Jenis Kendaraan"
         ' 
@@ -167,36 +172,39 @@ Partial Class frmInput
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Cambria", 11.25F)
-        Label1.Location = New Point(15, 76)
+        Label1.Location = New Point(17, 101)
         Label1.Name = "Label1"
-        Label1.Size = New Size(57, 17)
+        Label1.Size = New Size(73, 22)
         Label1.TabIndex = 4
         Label1.Text = "Petugas"
         ' 
         ' cbPetugas
         ' 
         cbPetugas.FormattingEnabled = True
-        cbPetugas.Items.AddRange(New Object() {"Anindita Rahma", "Sahardian Putra"})
-        cbPetugas.Location = New Point(128, 74)
+        cbPetugas.Items.AddRange(New Object() {"Anindita Rahma", "Sahardian Putra", "Zulvikar Kharisma"})
+        cbPetugas.Location = New Point(146, 99)
+        cbPetugas.Margin = New Padding(3, 4, 3, 4)
         cbPetugas.Name = "cbPetugas"
-        cbPetugas.Size = New Size(200, 23)
+        cbPetugas.Size = New Size(228, 28)
         cbPetugas.TabIndex = 2
         ' 
         ' txtNopol
         ' 
         txtNopol.BorderStyle = BorderStyle.FixedSingle
-        txtNopol.Location = New Point(128, 191)
+        txtNopol.Location = New Point(146, 255)
+        txtNopol.Margin = New Padding(3, 4, 3, 4)
         txtNopol.Name = "txtNopol"
-        txtNopol.Size = New Size(200, 23)
+        txtNopol.Size = New Size(228, 27)
         txtNopol.TabIndex = 1
         ' 
         ' cbKendaraan
         ' 
         cbKendaraan.FormattingEnabled = True
         cbKendaraan.Items.AddRange(New Object() {"Motor", "Mobil"})
-        cbKendaraan.Location = New Point(128, 113)
+        cbKendaraan.Location = New Point(146, 151)
+        cbKendaraan.Margin = New Padding(3, 4, 3, 4)
         cbKendaraan.Name = "cbKendaraan"
-        cbKendaraan.Size = New Size(200, 23)
+        cbKendaraan.Size = New Size(228, 28)
         cbKendaraan.TabIndex = 0
         ' 
         ' PictureBox1
@@ -204,21 +212,23 @@ Partial Class frmInput
         PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), Image)
         PictureBox1.BorderStyle = BorderStyle.FixedSingle
         PictureBox1.Location = New Point(-1, -1)
+        PictureBox1.Margin = New Padding(3, 4, 3, 4)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(382, 76)
+        PictureBox1.Size = New Size(436, 101)
         PictureBox1.TabIndex = 0
         PictureBox1.TabStop = False
         ' 
         ' frmInput
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.MidnightBlue
-        ClientSize = New Size(379, 419)
+        ClientSize = New Size(433, 559)
         Controls.Add(PictureBox1)
         Controls.Add(Panel2)
         FormBorderStyle = FormBorderStyle.None
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
+        Margin = New Padding(3, 4, 3, 4)
         Name = "frmInput"
         Text = "InputKendaraan"
         Panel2.ResumeLayout(False)

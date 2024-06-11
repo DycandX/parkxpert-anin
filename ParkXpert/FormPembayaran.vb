@@ -27,15 +27,20 @@ Public Class FormPembayaran
     Private Sub CmbNoPol_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbnopol.SelectedIndexChanged
         Try
             koneksi()
-            Dim query As String = "SELECT IDParkir, Jenis, IDPetugas, WaktuMasuk FROM kendaraan WHERE NoKendaraan = @NoKendaraan"
+            Dim query As String = "SELECT IDParkir, Jenis, NamaPetugas, WaktuMasuk FROM kendaraan WHERE NoKendaraan = @NoKendaraan"
             CMD = New MySqlCommand(query, conn)
             CMD.Parameters.AddWithValue("@NoKendaraan", cbnopol.SelectedItem.ToString())
             DR = CMD.ExecuteReader()
             If DR.Read() Then
                 lblid.Text = DR("IDParkir").ToString()
                 lbljenis.Text = DR("Jenis").ToString()
-                lblpetugas.Text = DR("IDPetugas").ToString()
+                lblpetugas.Text = DR("NamaPetugas").ToString()
                 lblmasuk.Text = DR("WaktuMasuk").ToString()
+
+                ' Hitung durasi jika waktu masuk sudah ada dan waktu keluar sudah dipilih
+                If lblmasuk.Text <> "" And dtpKeluar.Value <> Nothing Then
+                    HitungDurasiDanTagihan()
+                End If
             End If
             DR.Close()
         Catch ex As Exception
@@ -43,33 +48,49 @@ Public Class FormPembayaran
         End Try
     End Sub
 
-    ' Event saat DateTimePicker ValueChanged
     Private Sub DtpKeluar_ValueChanged(sender As Object, e As EventArgs) Handles dtpKeluar.ValueChanged
         If lblmasuk.Text <> "" Then
-            Dim waktuMasuk As DateTime = DateTime.Parse(lblmasuk.Text)
-            Dim waktuKeluar As DateTime = dtpKeluar.Value
-            Dim durasi As TimeSpan = waktuKeluar - waktuMasuk
-            lbldurasi.Text = durasi.TotalHours.ToString("F2") & " Jam"
-
-            Dim tarifPerJam As Integer
-            Try
-                koneksi()
-                Dim query As String = "SELECT Tarif FROM tarif_kendaraan WHERE Jenis = @Jenis"
-                CMD = New MySqlCommand(query, conn)
-                CMD.Parameters.AddWithValue("@Jenis", lbljenis.Text)
-                tarifPerJam = Convert.ToInt32(CMD.ExecuteScalar())
-            Catch ex As Exception
-                MessageBox.Show("Error: " & ex.Message)
-            End Try
-
-            Dim totalTarif As Decimal = durasi.TotalHours * tarifPerJam
-            lbltagihan.Text = totalTarif.ToString("C")
+            ' Hitung durasi dan tagihan ketika nilai waktu keluar berubah
+            HitungDurasiDanTagihan()
         End If
+    End Sub
+
+    Private Sub HitungDurasiDanTagihan()
+        Dim waktuMasuk As DateTime = DateTime.Parse(lblmasuk.Text)
+        Dim waktuKeluar As DateTime = dtpKeluar.Value
+        Dim durasi As TimeSpan = waktuKeluar - waktuMasuk
+
+        lbldurasi.Text = durasi.TotalHours.ToString("F2") & " Jam"
+
+        Dim tarifPerJam As Decimal
+        Try
+            koneksi()
+            Dim query As String = "SELECT Tarif FROM tarifkendaraan WHERE Jenis = @Jenis"
+            CMD = New MySqlCommand(query, conn)
+            CMD.Parameters.AddWithValue("@Jenis", lbljenis.Text)
+            tarifPerJam = Convert.ToDecimal(CMD.ExecuteScalar())
+
+            ' Jika durasi kurang dari satu jam, tetap gunakan tarif per jam tanpa mengalikan dengan durasi
+            If durasi.TotalHours < 1 Then
+                lbltagihan.Text = tarifPerJam.ToString("C")
+            Else
+                Dim totalTarif As Decimal = durasi.TotalHours * tarifPerJam
+                lbltagihan.Text = totalTarif.ToString("C")
+            End If
+        Catch ex As Exception
+            MessageBox.Show("Error: " & ex.Message)
+        End Try
     End Sub
 
     ' Event saat Button Bayar Click
     Private Sub BtnBayar_Click(sender As Object, e As EventArgs) Handles btnBayar.Click
-        Dim jumlahBayar As Decimal = Decimal.Parse(txtbayar.Text)
+        ' Validasi input
+        Dim jumlahBayar As Decimal
+        If Not Decimal.TryParse(txtbayar.Text, jumlahBayar) Then
+            MessageBox.Show("Masukkan jumlah bayar yang valid.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Return
+        End If
+
         Dim totalTagihan As Decimal = Decimal.Parse(lbltagihan.Text, Globalization.NumberStyles.Currency)
         Dim kembalian As Decimal = jumlahBayar - totalTagihan
         lblkembali.Text = kembalian.ToString("C")
@@ -90,6 +111,17 @@ Public Class FormPembayaran
         Catch ex As Exception
             MessageBox.Show("Error: " & ex.Message)
         End Try
+
+        ' Set nilai label-label baru
+        lbljenis1.Text = lbljenis.Text
+        lblnopol.Text = cbnopol.SelectedItem.ToString()
+        lblmasuk1.Text = lblmasuk.Text
+        lblkeluar1.Text = dtpKeluar.Value.ToString()
+        lbldurasi1.Text = lbldurasi.Text
+        lblpetugas1.Text = lblpetugas.Text
+        lbltagihan1.Text = lbltagihan.Text
+        lblbayar.Text = txtbayar.Text
+        lblkembali.Text = kembalian.ToString("C")
     End Sub
 
     ' Event saat Button Clear Click
