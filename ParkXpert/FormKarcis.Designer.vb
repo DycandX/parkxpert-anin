@@ -95,50 +95,50 @@ Partial Class FormKarcis
         ' lblpetugas
         ' 
         lblpetugas.AutoSize = True
-        lblpetugas.Font = New Font("Cambria", 9.75F)
-        lblpetugas.Location = New Point(141, 118)
+        lblpetugas.Font = New Font("Cambria", 11.25F)
+        lblpetugas.Location = New Point(139, 116)
         lblpetugas.Name = "lblpetugas"
-        lblpetugas.Size = New Size(11, 15)
+        lblpetugas.Size = New Size(13, 17)
         lblpetugas.TabIndex = 19
         lblpetugas.Text = "-"
         ' 
         ' lblwaktu
         ' 
         lblwaktu.AutoSize = True
-        lblwaktu.Font = New Font("Cambria", 9.75F)
-        lblwaktu.Location = New Point(141, 95)
+        lblwaktu.Font = New Font("Cambria", 11.25F)
+        lblwaktu.Location = New Point(139, 93)
         lblwaktu.Name = "lblwaktu"
-        lblwaktu.Size = New Size(11, 15)
+        lblwaktu.Size = New Size(13, 17)
         lblwaktu.TabIndex = 18
         lblwaktu.Text = "-"
         ' 
         ' lblnopol
         ' 
         lblnopol.AutoSize = True
-        lblnopol.Font = New Font("Cambria", 9.75F)
-        lblnopol.Location = New Point(141, 72)
+        lblnopol.Font = New Font("Cambria", 11.25F)
+        lblnopol.Location = New Point(139, 70)
         lblnopol.Name = "lblnopol"
-        lblnopol.Size = New Size(11, 15)
+        lblnopol.Size = New Size(13, 17)
         lblnopol.TabIndex = 16
         lblnopol.Text = "-"
         ' 
         ' lbljenis
         ' 
         lbljenis.AutoSize = True
-        lbljenis.Font = New Font("Cambria", 9.75F)
-        lbljenis.Location = New Point(141, 49)
+        lbljenis.Font = New Font("Cambria", 11.25F)
+        lbljenis.Location = New Point(139, 47)
         lbljenis.Name = "lbljenis"
-        lbljenis.Size = New Size(11, 15)
+        lbljenis.Size = New Size(13, 17)
         lbljenis.TabIndex = 15
         lbljenis.Text = "-"
         ' 
         ' lblid
         ' 
         lblid.AutoSize = True
-        lblid.Font = New Font("Cambria", 9.75F)
-        lblid.Location = New Point(141, 26)
+        lblid.Font = New Font("Cambria", 11.25F)
+        lblid.Location = New Point(139, 24)
         lblid.Name = "lblid"
-        lblid.Size = New Size(11, 15)
+        lblid.Size = New Size(13, 17)
         lblid.TabIndex = 14
         lblid.Text = "-"
         ' 
