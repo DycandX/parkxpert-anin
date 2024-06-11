@@ -2,6 +2,7 @@
 
 Public Class frmUtama
     Private isInputFormVisible As Boolean = False
+    Private isPembayaranFormVisible As Boolean = False
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
         koneksi()
@@ -54,7 +55,7 @@ Public Class frmUtama
         Next
     End Sub
 
-    Public Sub ShowKarcisForm(idParkir, jenis, noKendaraan, waktuMasuk, petugas)
+    Public Sub ShowKarcisForm(idParkir As String, jenis As String, noKendaraan As String, waktuMasuk As DateTime, petugas As String)
         Dim frmKarcis As New FormKarcis()
         frmKarcis.TopLevel = False
         frmKarcis.FormBorderStyle = FormBorderStyle.None
@@ -64,5 +65,39 @@ Public Class frmUtama
         frmKarcis.Show()
 
         frmKarcis.TampilkanData(idParkir, jenis, noKendaraan, waktuMasuk, petugas)
+    End Sub
+
+    Private Sub btnPembayaran_CheckedChanged(sender As Object, e As EventArgs) Handles btnPembayaran.CheckedChanged
+        If btnPembayaran.Checked Then ' Tombol ditekan
+            If Not isPembayaranFormVisible Then ' Jika form pembayaran belum ditampilkan
+                TampilkanFormPembayaran() ' Tampilkan form pembayaran
+                isPembayaranFormVisible = True ' Set status form pembayaran menjadi ditampilkan
+            End If
+        Else ' Tombol dilepas
+            If isPembayaranFormVisible Then ' Jika form pembayaran sedang ditampilkan
+                TutupFormPembayaran() ' Tutup form pembayaran
+                isPembayaranFormVisible = False ' Set status form pembayaran menjadi disembunyikan
+            End If
+        End If
+    End Sub
+
+    Private Sub TampilkanFormPembayaran()
+        Dim frmPembayaran As New FormPembayaran()
+        frmPembayaran.TopLevel = False
+        frmPembayaran.FormBorderStyle = FormBorderStyle.None
+        frmPembayaran.Location = New Point(160, 80)
+        Body.Controls.Clear()
+        Body.Controls.Add(frmPembayaran)
+        frmPembayaran.Show()
+    End Sub
+
+    Private Sub TutupFormPembayaran()
+        ' Hapus form pembayaran dari panel Body
+        For Each ctrl As Control In Body.Controls
+            If TypeOf ctrl Is FormPembayaran Then
+                Body.Controls.Remove(ctrl)
+                Exit For
+            End If
+        Next
     End Sub
 End Class

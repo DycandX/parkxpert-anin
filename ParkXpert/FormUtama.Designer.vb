@@ -40,6 +40,7 @@ Partial Class frmUtama
         btnexit = New Button()
         btnmin = New Button()
         Body = New Panel()
+        btnPembayaran = New CheckBox()
         Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel2.SuspendLayout()
@@ -128,6 +129,7 @@ Partial Class frmUtama
         ' Panel2
         ' 
         Panel2.BackColor = Color.MidnightBlue
+        Panel2.Controls.Add(btnPembayaran)
         Panel2.Controls.Add(btnInput)
         Panel2.Location = New Point(0, 140)
         Panel2.Name = "Panel2"
@@ -230,6 +232,24 @@ Partial Class frmUtama
         Body.Size = New Size(1000, 617)
         Body.TabIndex = 4
         ' 
+        ' btnPembayaran
+        ' 
+        btnPembayaran.Appearance = Appearance.Button
+        btnPembayaran.AutoSize = True
+        btnPembayaran.BackgroundImageLayout = ImageLayout.None
+        btnPembayaran.FlatStyle = FlatStyle.Flat
+        btnPembayaran.Font = New Font("Sitka Small", 15.7499981F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnPembayaran.ForeColor = Color.White
+        btnPembayaran.Image = CType(resources.GetObject("btnPembayaran.Image"), Image)
+        btnPembayaran.ImageAlign = ContentAlignment.MiddleLeft
+        btnPembayaran.Location = New Point(-2, 49)
+        btnPembayaran.Name = "btnPembayaran"
+        btnPembayaran.Size = New Size(306, 46)
+        btnPembayaran.TabIndex = 2
+        btnPembayaran.Text = "PEMBAYARAN                "
+        btnPembayaran.TextImageRelation = TextImageRelation.ImageBeforeText
+        btnPembayaran.UseVisualStyleBackColor = False
+        ' 
         ' frmUtama
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -274,4 +294,5 @@ Partial Class frmUtama
     Friend WithEvents Panel7 As Panel
     Friend WithEvents Panel8 As Panel
     Friend WithEvents Body As Panel
+    Friend WithEvents btnPembayaran As CheckBox
 End Class
