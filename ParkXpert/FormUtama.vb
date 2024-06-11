@@ -1,6 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class frmUtama
+    Private isInputFormVisible As Boolean = False
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
         koneksi()
@@ -20,7 +21,17 @@ Public Class frmUtama
     End Sub
 
     Private Sub btnInput_CheckedChanged(sender As Object, e As EventArgs) Handles btnInput.CheckedChanged
-        TampilkanFormInput()
+        If btnInput.Checked Then ' Tombol ditekan
+            If Not isInputFormVisible Then ' Jika form input belum ditampilkan
+                TampilkanFormInput() ' Tampilkan form input
+                isInputFormVisible = True ' Set status form input menjadi ditampilkan
+            End If
+        Else ' Tombol dilepas
+            If isInputFormVisible Then ' Jika form input sedang ditampilkan
+                TutupFormInput() ' Tutup form input
+                isInputFormVisible = False ' Set status form input menjadi disembunyikan
+            End If
+        End If
     End Sub
 
     Private Sub TampilkanFormInput()
@@ -31,6 +42,16 @@ Public Class frmUtama
         Body.Controls.Clear()
         Body.Controls.Add(frmInput)
         frmInput.Show()
+    End Sub
+
+    Private Sub TutupFormInput()
+        ' Hapus form input dari panel Body
+        For Each ctrl As Control In Body.Controls
+            If TypeOf ctrl Is frmInput Then
+                Body.Controls.Remove(ctrl)
+                Exit For
+            End If
+        Next
     End Sub
 
     Public Sub ShowKarcisForm(idParkir, jenis, noKendaraan, waktuMasuk, petugas)
