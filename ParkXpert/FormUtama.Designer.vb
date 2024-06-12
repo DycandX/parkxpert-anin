@@ -31,6 +31,7 @@ Partial Class frmUtama
         profilNama = New Label()
         PictureBox1 = New PictureBox()
         Panel2 = New Panel()
+        btnPembayaran = New CheckBox()
         btnInput = New CheckBox()
         Panel3 = New Panel()
         Panel4 = New Panel()
@@ -40,7 +41,6 @@ Partial Class frmUtama
         btnexit = New Button()
         btnmin = New Button()
         Body = New Panel()
-        btnPembayaran = New CheckBox()
         Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel2.SuspendLayout()
@@ -136,6 +136,24 @@ Partial Class frmUtama
         Panel2.Size = New Size(300, 407)
         Panel2.TabIndex = 1
         ' 
+        ' btnPembayaran
+        ' 
+        btnPembayaran.Appearance = Appearance.Button
+        btnPembayaran.AutoSize = True
+        btnPembayaran.BackgroundImageLayout = ImageLayout.None
+        btnPembayaran.FlatStyle = FlatStyle.Flat
+        btnPembayaran.Font = New Font("Sitka Small", 15.7499981F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnPembayaran.ForeColor = Color.White
+        btnPembayaran.Image = CType(resources.GetObject("btnPembayaran.Image"), Image)
+        btnPembayaran.ImageAlign = ContentAlignment.MiddleLeft
+        btnPembayaran.Location = New Point(-1, 56)
+        btnPembayaran.Name = "btnPembayaran"
+        btnPembayaran.Size = New Size(306, 46)
+        btnPembayaran.TabIndex = 2
+        btnPembayaran.Text = "PEMBAYARAN                "
+        btnPembayaran.TextImageRelation = TextImageRelation.ImageBeforeText
+        btnPembayaran.UseVisualStyleBackColor = False
+        ' 
         ' btnInput
         ' 
         btnInput.Appearance = Appearance.Button
@@ -146,7 +164,7 @@ Partial Class frmUtama
         btnInput.ForeColor = Color.White
         btnInput.Image = CType(resources.GetObject("btnInput.Image"), Image)
         btnInput.ImageAlign = ContentAlignment.MiddleLeft
-        btnInput.Location = New Point(-1, -1)
+        btnInput.Location = New Point(-1, 5)
         btnInput.Name = "btnInput"
         btnInput.Size = New Size(305, 46)
         btnInput.TabIndex = 1
@@ -231,24 +249,6 @@ Partial Class frmUtama
         Body.Name = "Body"
         Body.Size = New Size(1000, 617)
         Body.TabIndex = 4
-        ' 
-        ' btnPembayaran
-        ' 
-        btnPembayaran.Appearance = Appearance.Button
-        btnPembayaran.AutoSize = True
-        btnPembayaran.BackgroundImageLayout = ImageLayout.None
-        btnPembayaran.FlatStyle = FlatStyle.Flat
-        btnPembayaran.Font = New Font("Sitka Small", 15.7499981F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnPembayaran.ForeColor = Color.White
-        btnPembayaran.Image = CType(resources.GetObject("btnPembayaran.Image"), Image)
-        btnPembayaran.ImageAlign = ContentAlignment.MiddleLeft
-        btnPembayaran.Location = New Point(-2, 49)
-        btnPembayaran.Name = "btnPembayaran"
-        btnPembayaran.Size = New Size(306, 46)
-        btnPembayaran.TabIndex = 2
-        btnPembayaran.Text = "PEMBAYARAN                "
-        btnPembayaran.TextImageRelation = TextImageRelation.ImageBeforeText
-        btnPembayaran.UseVisualStyleBackColor = False
         ' 
         ' frmUtama
         ' 
