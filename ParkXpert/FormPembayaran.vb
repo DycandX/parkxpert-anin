@@ -24,7 +24,7 @@ Public Class FormPembayaran
     End Sub
 
     ' Event saat ComboBox SelectedIndexChanged
-    Private Sub CmbNoPol_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbnopol.SelectedIndexChanged
+    Private Sub cbnopol_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbnopol.SelectedIndexChanged
         ' Periksa jika tidak ada item yang dipilih
         If cbnopol.SelectedIndex = -1 Then
             Return
@@ -53,7 +53,7 @@ Public Class FormPembayaran
         End Try
     End Sub
 
-    Private Sub DtpKeluar_ValueChanged(sender As Object, e As EventArgs) Handles dtpKeluar.ValueChanged
+    Private Sub dtpKeluar_ValueChanged(sender As Object, e As EventArgs) Handles dtpKeluar.ValueChanged
         If lblmasuk.Text <> "" Then
             ' Hitung durasi dan tagihan ketika nilai waktu keluar berubah
             HitungDurasiDanTagihan()
@@ -77,10 +77,10 @@ Public Class FormPembayaran
 
             ' Jika durasi kurang dari satu jam, tetap gunakan tarif per jam tanpa mengalikan dengan durasi
             If durasi.TotalHours < 1 Then
-                lbltagihan.Text = tarifPerJam.ToString("C")
+                lbltagihan.Text = "Rp" & tarifPerJam.ToString("N2", Globalization.CultureInfo.CreateSpecificCulture("id-ID"))
             Else
                 Dim totalTarif As Decimal = durasi.TotalHours * tarifPerJam
-                lbltagihan.Text = totalTarif.ToString("C")
+                lbltagihan.Text = "Rp" & totalTarif.ToString("N2", Globalization.CultureInfo.CreateSpecificCulture("id-ID"))
             End If
         Catch ex As Exception
             MessageBox.Show("Error: " & ex.Message)
@@ -88,7 +88,7 @@ Public Class FormPembayaran
     End Sub
 
     ' Event saat Button Bayar Click
-    Private Sub BtnBayar_Click(sender As Object, e As EventArgs) Handles btnBayar.Click
+    Private Sub btnBayar_Click(sender As Object, e As EventArgs) Handles btnBayar.Click
         ' Validasi input
         Dim jumlahBayar As Decimal
         If Not Decimal.TryParse(txtbayar.Text, jumlahBayar) Then
@@ -96,9 +96,9 @@ Public Class FormPembayaran
             Return
         End If
 
-        Dim totalTagihan As Decimal = Decimal.Parse(lbltagihan.Text, Globalization.NumberStyles.Currency)
+        Dim totalTagihan As Decimal = Decimal.Parse(lbltagihan.Text, Globalization.NumberStyles.Currency, Globalization.CultureInfo.CreateSpecificCulture("id-ID"))
         Dim kembalian As Decimal = jumlahBayar - totalTagihan
-        lblkembali.Text = kembalian.ToString("C")
+        lblkembali.Text = "Rp" & kembalian.ToString("N2", Globalization.CultureInfo.CreateSpecificCulture("id-ID"))
 
         ' Menyimpan data pembayaran ke database
         Try
@@ -109,7 +109,7 @@ Public Class FormPembayaran
             CMD.Parameters.AddWithValue("@WaktuMasuk", DateTime.Parse(lblmasuk.Text))
             CMD.Parameters.AddWithValue("@WaktuKeluar", dtpKeluar.Value)
             CMD.Parameters.AddWithValue("@Durasi", lbldurasi.Text)
-            CMD.Parameters.AddWithValue("@TotalTarif", Decimal.Parse(lbltagihan.Text, Globalization.NumberStyles.Currency))
+            CMD.Parameters.AddWithValue("@TotalTarif", totalTagihan)
             CMD.Parameters.AddWithValue("@JumlahBayar", jumlahBayar)
             CMD.Parameters.AddWithValue("@Kembalian", kembalian)
             CMD.ExecuteNonQuery()
@@ -122,8 +122,8 @@ Public Class FormPembayaran
             lbldurasi1.Text = lbldurasi.Text
             lblpetugas1.Text = lblpetugas.Text
             lbltagihan1.Text = lbltagihan.Text
-            lblbayar.Text = txtbayar.Text
-            lblkembali.Text = kembalian.ToString("C")
+            lblbayar.Text = "Rp" & jumlahBayar.ToString("N2", Globalization.CultureInfo.CreateSpecificCulture("id-ID"))
+            lblkembali.Text = "Rp" & kembalian.ToString("N2", Globalization.CultureInfo.CreateSpecificCulture("id-ID"))
 
             ' Tampilkan pesan sukses
             MessageBox.Show("Pembayaran berhasil dilakukan.", "Pembayaran Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -133,7 +133,7 @@ Public Class FormPembayaran
     End Sub
 
     ' Event saat Button Clear Click
-    Private Sub BtnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         cbnopol.SelectedIndex = -1
         lblid.Text = "-"
         lbljenis.Text = "-"
@@ -153,5 +153,4 @@ Public Class FormPembayaran
         lbltagihan1.Text = "-"
         lblnopol.Text = "No Kendaraan"
     End Sub
-
 End Class

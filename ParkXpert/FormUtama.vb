@@ -27,6 +27,8 @@ Public Class frmUtama
                 TampilkanFormInput() ' Tampilkan form input
                 isInputFormVisible = True ' Set status form input menjadi ditampilkan
             End If
+            ' Set the pembayaran button to unchecked
+            btnPembayaran.Checked = False
         Else ' Tombol dilepas
             If isInputFormVisible Then ' Jika form input sedang ditampilkan
                 TutupFormInput() ' Tutup form input
@@ -65,6 +67,16 @@ Public Class frmUtama
         frmKarcis.Show()
 
         frmKarcis.TampilkanData(idParkir, jenis, noKendaraan, waktuMasuk, petugas)
+
+        ' Add an event handler for when the Karcis form is closed
+        AddHandler frmKarcis.FormClosed, AddressOf OnKarcisFormClosed
+    End Sub
+
+    Private Sub OnKarcisFormClosed(sender As Object, e As FormClosedEventArgs)
+        ' Check if the input form should be displayed again
+        If isInputFormVisible Then
+            TampilkanFormInput()
+        End If
     End Sub
 
     Private Sub btnPembayaran_CheckedChanged(sender As Object, e As EventArgs) Handles btnPembayaran.CheckedChanged
@@ -73,6 +85,8 @@ Public Class frmUtama
                 TampilkanFormPembayaran() ' Tampilkan form pembayaran
                 isPembayaranFormVisible = True ' Set status form pembayaran menjadi ditampilkan
             End If
+            ' Set the input button to unchecked
+            btnInput.Checked = False
         Else ' Tombol dilepas
             If isPembayaranFormVisible Then ' Jika form pembayaran sedang ditampilkan
                 TutupFormPembayaran() ' Tutup form pembayaran
