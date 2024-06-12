@@ -25,6 +25,11 @@ Public Class FormPembayaran
 
     ' Event saat ComboBox SelectedIndexChanged
     Private Sub CmbNoPol_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbnopol.SelectedIndexChanged
+        ' Periksa jika tidak ada item yang dipilih
+        If cbnopol.SelectedIndex = -1 Then
+            Return
+        End If
+
         Try
             koneksi()
             Dim query As String = "SELECT IDParkir, Jenis, NamaPetugas, WaktuMasuk FROM kendaraan WHERE NoKendaraan = @NoKendaraan"
@@ -38,7 +43,7 @@ Public Class FormPembayaran
                 lblmasuk.Text = DR("WaktuMasuk").ToString()
 
                 ' Hitung durasi jika waktu masuk sudah ada dan waktu keluar sudah dipilih
-                If lblmasuk.Text <> "" And dtpKeluar.Value <> Nothing Then
+                If lblmasuk.Text <> "" AndAlso dtpKeluar.Value <> Nothing Then
                     HitungDurasiDanTagihan()
                 End If
             End If
@@ -108,33 +113,45 @@ Public Class FormPembayaran
             CMD.Parameters.AddWithValue("@JumlahBayar", jumlahBayar)
             CMD.Parameters.AddWithValue("@Kembalian", kembalian)
             CMD.ExecuteNonQuery()
+
+            ' Set nilai label-label baru
+            lbljenis1.Text = lbljenis.Text
+            lblnopol.Text = cbnopol.SelectedItem.ToString()
+            lblmasuk1.Text = lblmasuk.Text
+            lblkeluar1.Text = dtpKeluar.Value.ToString()
+            lbldurasi1.Text = lbldurasi.Text
+            lblpetugas1.Text = lblpetugas.Text
+            lbltagihan1.Text = lbltagihan.Text
+            lblbayar.Text = txtbayar.Text
+            lblkembali.Text = kembalian.ToString("C")
+
+            ' Tampilkan pesan sukses
+            MessageBox.Show("Pembayaran berhasil dilakukan.", "Pembayaran Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information)
         Catch ex As Exception
             MessageBox.Show("Error: " & ex.Message)
         End Try
-
-        ' Set nilai label-label baru
-        lbljenis1.Text = lbljenis.Text
-        lblnopol.Text = cbnopol.SelectedItem.ToString()
-        lblmasuk1.Text = lblmasuk.Text
-        lblkeluar1.Text = dtpKeluar.Value.ToString()
-        lbldurasi1.Text = lbldurasi.Text
-        lblpetugas1.Text = lblpetugas.Text
-        lbltagihan1.Text = lbltagihan.Text
-        lblbayar.Text = txtbayar.Text
-        lblkembali.Text = kembalian.ToString("C")
     End Sub
 
     ' Event saat Button Clear Click
     Private Sub BtnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         cbnopol.SelectedIndex = -1
-        lblid.Text = ""
-        lbljenis.Text = ""
-        lblpetugas.Text = ""
-        lblmasuk.Text = ""
-        lbldurasi.Text = ""
-        lbltagihan.Text = ""
+        lblid.Text = "-"
+        lbljenis.Text = "-"
+        lblpetugas.Text = "-"
+        lblmasuk.Text = "-"
+        lbldurasi.Text = "-"
+        lbltagihan.Text = "-"
         txtbayar.Text = ""
-        lblkembali.Text = ""
+        lblkembali.Text = "-"
+
+        lblbayar.Text = "-"
+        lblkeluar1.Text = "-"
+        lbljenis1.Text = "Jenis"
+        lblpetugas1.Text = "-"
+        lblmasuk1.Text = "-"
+        lbldurasi1.Text = "-"
+        lbltagihan1.Text = "-"
+        lblnopol.Text = "No Kendaraan"
     End Sub
 
 End Class
