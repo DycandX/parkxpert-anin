@@ -79,6 +79,7 @@ Partial Class FormPembayaran
         Label3 = New Label()
         Label2 = New Label()
         Label1 = New Label()
+        Label11 = New Label()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
         Panel3.SuspendLayout()
@@ -470,6 +471,7 @@ Partial Class FormPembayaran
         ' 
         ' GroupBox1
         ' 
+        GroupBox1.Controls.Add(Label11)
         GroupBox1.Controls.Add(dtpKeluar)
         GroupBox1.Controls.Add(cbnopol)
         GroupBox1.Controls.Add(lbltagihan)
@@ -587,9 +589,9 @@ Partial Class FormPembayaran
         ' 
         ' txtbayar
         ' 
-        txtbayar.Location = New Point(116, 277)
+        txtbayar.Location = New Point(155, 277)
         txtbayar.Name = "txtbayar"
-        txtbayar.Size = New Size(194, 26)
+        txtbayar.Size = New Size(155, 26)
         txtbayar.TabIndex = 9
         txtbayar.TextAlign = HorizontalAlignment.Right
         ' 
@@ -694,6 +696,16 @@ Partial Class FormPembayaran
         Label1.TabIndex = 6
         Label1.Text = "----------------------------- P E M B A Y A R A N -----------------------------"
         ' 
+        ' Label11
+        ' 
+        Label11.AutoSize = True
+        Label11.Font = New Font("Cambria", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label11.Location = New Point(128, 282)
+        Label11.Name = "Label11"
+        Label11.Size = New Size(22, 15)
+        Label11.TabIndex = 22
+        Label11.Text = "Rp"
+        ' 
         ' FormPembayaran
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -773,4 +785,5 @@ Partial Class FormPembayaran
     Friend WithEvents Label58 As Label
     Friend WithEvents dtpKeluar As DateTimePicker
     Friend WithEvents cbnopol As ComboBox
+    Friend WithEvents Label11 As Label
 End Class

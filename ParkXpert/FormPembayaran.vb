@@ -76,16 +76,22 @@ Public Class FormPembayaran
             tarifPerJam = Convert.ToDecimal(CMD.ExecuteScalar())
 
             ' Jika durasi kurang dari satu jam, tetap gunakan tarif per jam tanpa mengalikan dengan durasi
+            Dim totalTarif As Decimal
             If durasi.TotalHours < 1 Then
-                lbltagihan.Text = "Rp" & tarifPerJam.ToString("N2", Globalization.CultureInfo.CreateSpecificCulture("id-ID"))
+                totalTarif = tarifPerJam
             Else
-                Dim totalTarif As Decimal = durasi.TotalHours * tarifPerJam
-                lbltagihan.Text = "Rp" & totalTarif.ToString("N2", Globalization.CultureInfo.CreateSpecificCulture("id-ID"))
+                totalTarif = durasi.TotalHours * tarifPerJam
             End If
+
+            ' Bulatkan ke ribuan terdekat
+            Dim totalTarifBulanan As Decimal = Math.Ceiling(totalTarif / 1000) * 1000
+
+            lbltagihan.Text = "Rp" & totalTarifBulanan.ToString("N0", Globalization.CultureInfo.CreateSpecificCulture("id-ID")) & ",00"
         Catch ex As Exception
             MessageBox.Show("Error: " & ex.Message)
         End Try
     End Sub
+
 
     ' Event saat Button Bayar Click
     Private Sub btnBayar_Click(sender As Object, e As EventArgs) Handles btnBayar.Click
