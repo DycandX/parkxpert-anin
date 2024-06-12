@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "E:\\_PROJECT\\ParkXpert-anin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{56596E88-FBDB-4C32-915E-95A81E08E84C}|ParkXpert\\ParkXpert.vbproj|E:\\_PROJECT\\ParkXpert-anin\\parkxpert\\formpembayaran.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{56596E88-FBDB-4C32-915E-95A81E08E84C}|ParkXpert\\ParkXpert.vbproj|e:\\_project\\parkxpert-anin\\parkxpert\\formpembayaran.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{56596E88-FBDB-4C32-915E-95A81E08E84C}|ParkXpert\\ParkXpert.vbproj|solutionrelative:parkxpert\\formpembayaran.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56596E88-FBDB-4C32-915E-95A81E08E84C}|ParkXpert\\ParkXpert.vbproj|e:\\_project\\parkxpert-anin\\parkxpert\\formpembayaran.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{56596E88-FBDB-4C32-915E-95A81E08E84C}|ParkXpert\\ParkXpert.vbproj|E:\\_PROJECT\\ParkXpert-anin\\parkxpert\\formpembayaran.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{56596E88-FBDB-4C32-915E-95A81E08E84C}|ParkXpert\\ParkXpert.vbproj|solutionrelative:parkxpert\\formpembayaran.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
@@ -50,8 +50,7 @@
               "RelativeToolTip": "ParkXpert\\InputKendaraan.vb",
               "ViewState": "AQIAACIAAAAAAAAAAADwvxkAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-11T13:04:09.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-11T13:04:09.105Z"
             },
             {
               "$type": "Document",
@@ -63,8 +62,7 @@
               "RelativeToolTip": "ParkXpert\\FormUtama.vb",
               "ViewState": "AQIAAEoAAAAAAAAAAAAtwFcAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-06T05:44:40.389Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T05:44:40.389Z"
             },
             {
               "$type": "Document",
@@ -75,8 +73,7 @@
               "ToolTip": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\FormUtama.vb [Design]",
               "RelativeToolTip": "ParkXpert\\FormUtama.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-05T15:38:22.997Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-05T15:38:22.997Z"
             },
             {
               "$type": "Document",
@@ -86,7 +83,7 @@
               "RelativeDocumentMoniker": "ParkXpert\\FormPembayaran.vb",
               "ToolTip": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\FormPembayaran.vb",
               "RelativeToolTip": "ParkXpert\\FormPembayaran.vb",
-              "ViewState": "AQIAAIIAAAAAAAAAAAAUwIwAAAAbAAAA",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAIwGIAAABoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-06-11T11:38:50.566Z",
               "EditorCaption": ""
@@ -100,8 +97,7 @@
               "ToolTip": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\FormPembayaran.vb [Design]",
               "RelativeToolTip": "ParkXpert\\FormPembayaran.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-11T11:47:43.429Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-11T11:47:43.429Z"
             },
             {
               "$type": "Document",
@@ -112,8 +108,7 @@
               "ToolTip": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\InputKendaraan.vb [Design]",
               "RelativeToolTip": "ParkXpert\\InputKendaraan.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-11T13:04:03.307Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-11T13:04:03.307Z"
             },
             {
               "$type": "Document",
@@ -125,8 +120,7 @@
               "RelativeToolTip": "ParkXpert\\FormPembayaran.Designer.vb",
               "ViewState": "AQIAADoAAAAAAAAAAAAjwEQAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-11T12:03:14.418Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-11T12:03:14.418Z"
             }
           ]
         }
