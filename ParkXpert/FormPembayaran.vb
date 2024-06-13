@@ -127,6 +127,23 @@ Public Class FormPembayaran
             CMD.Parameters.AddWithValue("@Kembalian", kembalian)
             CMD.ExecuteNonQuery()
 
+            ' Masukkan data ke tabel riwayatkendaraan
+            Dim queryRiwayat As String = "INSERT INTO riwayatkendaraan (IDParkir, NoKendaraan, Jenis, WaktuMasuk, WaktuKeluar, NamaPetugas) VALUES (@IDParkir, @NoKendaraan, @Jenis, @WaktuMasuk, @WaktuKeluar, @NamaPetugas)"
+            CMD = New MySqlCommand(queryRiwayat, conn)
+            CMD.Parameters.AddWithValue("@IDParkir", lblid.Text)
+            CMD.Parameters.AddWithValue("@NoKendaraan", cbnopol.SelectedItem.ToString())
+            CMD.Parameters.AddWithValue("@Jenis", lbljenis.Text)
+            CMD.Parameters.AddWithValue("@WaktuMasuk", DateTime.Parse(lblmasuk.Text))
+            CMD.Parameters.AddWithValue("@WaktuKeluar", dtpKeluar.Value)
+            CMD.Parameters.AddWithValue("@NamaPetugas", lblpetugas.Text)
+            CMD.ExecuteNonQuery()
+
+            ' Hapus data dari tabel kendaraan
+            Dim queryDelete As String = "DELETE FROM kendaraan WHERE NoKendaraan = @NoKendaraan"
+            CMD = New MySqlCommand(queryDelete, conn)
+            CMD.Parameters.AddWithValue("@NoKendaraan", cbnopol.SelectedItem.ToString())
+            CMD.ExecuteNonQuery()
+
             ' Set nilai label-label baru
             lbljenis1.Text = lbljenis.Text
             lblnopol.Text = cbnopol.SelectedItem.ToString()
