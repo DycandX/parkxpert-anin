@@ -93,7 +93,6 @@ Public Class FormPembayaran
         End Try
     End Sub
 
-
     ' Event saat Button Bayar Click
     Private Sub btnBayar_Click(sender As Object, e As EventArgs) Handles btnBayar.Click
         ' Validasi input
@@ -185,7 +184,12 @@ Public Class FormPembayaran
     End Sub
 
     Private Sub btnCetak_Click(sender As Object, e As EventArgs) Handles btnCetak.Click
-        PrintDocument1.Print()
+        Using printDialog As New PrintDialog()
+            printDialog.Document = PrintDocument1
+            If printDialog.ShowDialog() = DialogResult.OK Then
+                PrintDocument1.Print()
+            End If
+        End Using
     End Sub
 
     Private Function GetPanelImage(panel As Panel, Optional dpi As Integer = 300) As Bitmap
