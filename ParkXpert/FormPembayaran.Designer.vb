@@ -167,7 +167,7 @@ Partial Class FormPembayaran
         ' 
         Label58.AutoSize = True
         Label58.Font = New Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label58.Location = New Point(99, 42)
+        Label58.Location = New Point(98, 42)
         Label58.Name = "Label58"
         Label58.Size = New Size(18, 19)
         Label58.TabIndex = 47
@@ -187,7 +187,7 @@ Partial Class FormPembayaran
         ' 
         lblkembali.AutoSize = True
         lblkembali.Font = New Font("Consolas", 8.25F)
-        lblkembali.Location = New Point(121, 252)
+        lblkembali.Location = New Point(120, 252)
         lblkembali.Name = "lblkembali"
         lblkembali.Size = New Size(13, 13)
         lblkembali.TabIndex = 45
@@ -197,7 +197,7 @@ Partial Class FormPembayaran
         ' 
         lblbayar.AutoSize = True
         lblbayar.Font = New Font("Consolas", 8.25F)
-        lblbayar.Location = New Point(121, 229)
+        lblbayar.Location = New Point(120, 229)
         lblbayar.Name = "lblbayar"
         lblbayar.Size = New Size(13, 13)
         lblbayar.TabIndex = 44
@@ -207,7 +207,7 @@ Partial Class FormPembayaran
         ' 
         lbltagihan1.AutoSize = True
         lbltagihan1.Font = New Font("Consolas", 8.25F)
-        lbltagihan1.Location = New Point(121, 206)
+        lbltagihan1.Location = New Point(120, 206)
         lbltagihan1.Name = "lbltagihan1"
         lbltagihan1.Size = New Size(13, 13)
         lbltagihan1.TabIndex = 43
@@ -217,7 +217,7 @@ Partial Class FormPembayaran
         ' 
         lblpetugas1.AutoSize = True
         lblpetugas1.Font = New Font("Consolas", 8.25F)
-        lblpetugas1.Location = New Point(121, 167)
+        lblpetugas1.Location = New Point(120, 167)
         lblpetugas1.Name = "lblpetugas1"
         lblpetugas1.Size = New Size(13, 13)
         lblpetugas1.TabIndex = 42
@@ -227,7 +227,7 @@ Partial Class FormPembayaran
         ' 
         lblkeluar1.AutoSize = True
         lblkeluar1.Font = New Font("Consolas", 8.25F)
-        lblkeluar1.Location = New Point(121, 111)
+        lblkeluar1.Location = New Point(120, 111)
         lblkeluar1.Name = "lblkeluar1"
         lblkeluar1.Size = New Size(13, 13)
         lblkeluar1.TabIndex = 41
@@ -237,7 +237,7 @@ Partial Class FormPembayaran
         ' 
         lbldurasi1.AutoSize = True
         lbldurasi1.Font = New Font("Consolas", 8.25F)
-        lbldurasi1.Location = New Point(121, 139)
+        lbldurasi1.Location = New Point(120, 139)
         lbldurasi1.Name = "lbldurasi1"
         lbldurasi1.Size = New Size(13, 13)
         lbldurasi1.TabIndex = 39
@@ -247,7 +247,7 @@ Partial Class FormPembayaran
         ' 
         lblmasuk1.AutoSize = True
         lblmasuk1.Font = New Font("Consolas", 8.25F)
-        lblmasuk1.Location = New Point(121, 83)
+        lblmasuk1.Location = New Point(120, 83)
         lblmasuk1.Name = "lblmasuk1"
         lblmasuk1.Size = New Size(13, 13)
         lblmasuk1.TabIndex = 38
@@ -257,7 +257,7 @@ Partial Class FormPembayaran
         ' 
         Label47.AutoSize = True
         Label47.Font = New Font("Consolas", 8.25F)
-        Label47.Location = New Point(102, 252)
+        Label47.Location = New Point(101, 252)
         Label47.Name = "Label47"
         Label47.Size = New Size(13, 13)
         Label47.TabIndex = 36
@@ -267,7 +267,7 @@ Partial Class FormPembayaran
         ' 
         Label46.AutoSize = True
         Label46.Font = New Font("Consolas", 8.25F)
-        Label46.Location = New Point(102, 229)
+        Label46.Location = New Point(101, 229)
         Label46.Name = "Label46"
         Label46.Size = New Size(13, 13)
         Label46.TabIndex = 35
@@ -277,7 +277,7 @@ Partial Class FormPembayaran
         ' 
         Label45.AutoSize = True
         Label45.Font = New Font("Consolas", 8.25F)
-        Label45.Location = New Point(102, 206)
+        Label45.Location = New Point(101, 206)
         Label45.Name = "Label45"
         Label45.Size = New Size(13, 13)
         Label45.TabIndex = 34
@@ -287,7 +287,7 @@ Partial Class FormPembayaran
         ' 
         Label44.AutoSize = True
         Label44.Font = New Font("Consolas", 8.25F)
-        Label44.Location = New Point(102, 167)
+        Label44.Location = New Point(101, 167)
         Label44.Name = "Label44"
         Label44.Size = New Size(13, 13)
         Label44.TabIndex = 33
@@ -297,7 +297,7 @@ Partial Class FormPembayaran
         ' 
         Label43.AutoSize = True
         Label43.Font = New Font("Consolas", 8.25F)
-        Label43.Location = New Point(102, 139)
+        Label43.Location = New Point(101, 139)
         Label43.Name = "Label43"
         Label43.Size = New Size(13, 13)
         Label43.TabIndex = 32
@@ -307,7 +307,7 @@ Partial Class FormPembayaran
         ' 
         Label40.AutoSize = True
         Label40.Font = New Font("Consolas", 8.25F)
-        Label40.Location = New Point(102, 111)
+        Label40.Location = New Point(101, 111)
         Label40.Name = "Label40"
         Label40.Size = New Size(13, 13)
         Label40.TabIndex = 29
@@ -317,7 +317,7 @@ Partial Class FormPembayaran
         ' 
         Label37.AutoSize = True
         Label37.Font = New Font("Consolas", 8.25F)
-        Label37.Location = New Point(102, 83)
+        Label37.Location = New Point(101, 83)
         Label37.Name = "Label37"
         Label37.Size = New Size(13, 13)
         Label37.TabIndex = 26
@@ -327,7 +327,7 @@ Partial Class FormPembayaran
         ' 
         Label36.AutoSize = True
         Label36.Font = New Font("Consolas", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label36.Location = New Point(14, 252)
+        Label36.Location = New Point(13, 252)
         Label36.Name = "Label36"
         Label36.Size = New Size(61, 13)
         Label36.TabIndex = 25
@@ -337,7 +337,7 @@ Partial Class FormPembayaran
         ' 
         Label35.AutoSize = True
         Label35.Font = New Font("Consolas", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label35.Location = New Point(14, 229)
+        Label35.Location = New Point(13, 229)
         Label35.Name = "Label35"
         Label35.Size = New Size(73, 13)
         Label35.TabIndex = 24
@@ -347,7 +347,7 @@ Partial Class FormPembayaran
         ' 
         Label34.AutoSize = True
         Label34.Font = New Font("Consolas", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label34.Location = New Point(14, 206)
+        Label34.Location = New Point(13, 206)
         Label34.Name = "Label34"
         Label34.Size = New Size(49, 13)
         Label34.TabIndex = 19
@@ -357,7 +357,7 @@ Partial Class FormPembayaran
         ' 
         Label29.AutoSize = True
         Label29.Font = New Font("Consolas", 8.25F)
-        Label29.Location = New Point(14, 167)
+        Label29.Location = New Point(13, 167)
         Label29.Name = "Label29"
         Label29.Size = New Size(49, 13)
         Label29.TabIndex = 19
@@ -367,7 +367,7 @@ Partial Class FormPembayaran
         ' 
         Label28.AutoSize = True
         Label28.Font = New Font("Consolas", 8.25F)
-        Label28.Location = New Point(14, 139)
+        Label28.Location = New Point(13, 139)
         Label28.Name = "Label28"
         Label28.Size = New Size(73, 13)
         Label28.TabIndex = 19
@@ -377,7 +377,7 @@ Partial Class FormPembayaran
         ' 
         Label27.AutoSize = True
         Label27.Font = New Font("Consolas", 8.25F)
-        Label27.Location = New Point(14, 111)
+        Label27.Location = New Point(13, 111)
         Label27.Name = "Label27"
         Label27.Size = New Size(79, 13)
         Label27.TabIndex = 19
@@ -387,7 +387,7 @@ Partial Class FormPembayaran
         ' 
         Label26.AutoSize = True
         Label26.Font = New Font("Consolas", 8.25F)
-        Label26.Location = New Point(14, 83)
+        Label26.Location = New Point(13, 83)
         Label26.Name = "Label26"
         Label26.Size = New Size(73, 13)
         Label26.TabIndex = 19
@@ -397,7 +397,7 @@ Partial Class FormPembayaran
         ' 
         lblnopol.AutoSize = True
         lblnopol.Font = New Font("Consolas", 12F)
-        lblnopol.Location = New Point(123, 43)
+        lblnopol.Location = New Point(122, 43)
         lblnopol.Name = "lblnopol"
         lblnopol.Size = New Size(117, 19)
         lblnopol.TabIndex = 6
@@ -407,7 +407,7 @@ Partial Class FormPembayaran
         ' 
         lbljenis1.AutoSize = True
         lbljenis1.Font = New Font("Consolas", 12F)
-        lbljenis1.Location = New Point(13, 43)
+        lbljenis1.Location = New Point(12, 43)
         lbljenis1.Name = "lbljenis1"
         lbljenis1.Size = New Size(54, 19)
         lbljenis1.TabIndex = 5

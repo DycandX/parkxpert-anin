@@ -171,15 +171,19 @@ Public Class FormPembayaran
         PrintDocument1.Print()
     End Sub
 
-    Private Function GetPanelImage(panel As Panel) As Bitmap
+    Private Function GetPanelImage(panel As Panel, Optional dpi As Integer = 300) As Bitmap
         Dim bmp As New Bitmap(panel.Width, panel.Height)
+        bmp.SetResolution(dpi, dpi)
         panel.DrawToBitmap(bmp, New Rectangle(0, 0, panel.Width, panel.Height))
         Return bmp
     End Function
 
     Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
         Dim bmp As Bitmap = GetPanelImage(PanelStruk)
-        e.Graphics.DrawImage(bmp, 0, 0)
+        Dim newWidth As Integer = bmp.Width * 3.2
+        Dim newHeight As Integer = bmp.Height * 3.2
+        Dim resizedBmp As New Bitmap(bmp, newWidth, newHeight)
+        e.Graphics.DrawImage(resizedBmp, 0, 0, newWidth, newHeight)
     End Sub
 
 End Class
