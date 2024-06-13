@@ -26,7 +26,7 @@ Partial Class FormPembayaran
         Panel1 = New Panel()
         btnClear = New Button()
         btnCetak = New Button()
-        Panel2 = New Panel()
+        PanelStruk = New Panel()
         Label58 = New Label()
         Label57 = New Label()
         lblkembali = New Label()
@@ -59,6 +59,7 @@ Partial Class FormPembayaran
         Panel3 = New Panel()
         Label19 = New Label()
         GroupBox1 = New GroupBox()
+        Label11 = New Label()
         dtpKeluar = New DateTimePicker()
         cbnopol = New ComboBox()
         lbltagihan = New Label()
@@ -79,9 +80,9 @@ Partial Class FormPembayaran
         Label3 = New Label()
         Label2 = New Label()
         Label1 = New Label()
-        Label11 = New Label()
+        PrintDocument1 = New Printing.PrintDocument()
         Panel1.SuspendLayout()
-        Panel2.SuspendLayout()
+        PanelStruk.SuspendLayout()
         Panel3.SuspendLayout()
         GroupBox1.SuspendLayout()
         SuspendLayout()
@@ -92,7 +93,7 @@ Partial Class FormPembayaran
         Panel1.BorderStyle = BorderStyle.FixedSingle
         Panel1.Controls.Add(btnClear)
         Panel1.Controls.Add(btnCetak)
-        Panel1.Controls.Add(Panel2)
+        Panel1.Controls.Add(PanelStruk)
         Panel1.Controls.Add(GroupBox1)
         Panel1.Location = New Point(12, 50)
         Panel1.Name = "Panel1"
@@ -123,44 +124,44 @@ Partial Class FormPembayaran
         btnCetak.Text = "Cetak"
         btnCetak.UseVisualStyleBackColor = False
         ' 
-        ' Panel2
+        ' PanelStruk
         ' 
-        Panel2.BackColor = Color.LightGray
-        Panel2.BorderStyle = BorderStyle.FixedSingle
-        Panel2.Controls.Add(Label58)
-        Panel2.Controls.Add(Label57)
-        Panel2.Controls.Add(lblkembali)
-        Panel2.Controls.Add(lblbayar)
-        Panel2.Controls.Add(lbltagihan1)
-        Panel2.Controls.Add(lblpetugas1)
-        Panel2.Controls.Add(lblkeluar1)
-        Panel2.Controls.Add(lbldurasi1)
-        Panel2.Controls.Add(lblmasuk1)
-        Panel2.Controls.Add(Label47)
-        Panel2.Controls.Add(Label46)
-        Panel2.Controls.Add(Label45)
-        Panel2.Controls.Add(Label44)
-        Panel2.Controls.Add(Label43)
-        Panel2.Controls.Add(Label40)
-        Panel2.Controls.Add(Label37)
-        Panel2.Controls.Add(Label36)
-        Panel2.Controls.Add(Label35)
-        Panel2.Controls.Add(Label34)
-        Panel2.Controls.Add(Label29)
-        Panel2.Controls.Add(Label28)
-        Panel2.Controls.Add(Label27)
-        Panel2.Controls.Add(Label26)
-        Panel2.Controls.Add(lblnopol)
-        Panel2.Controls.Add(lbljenis1)
-        Panel2.Controls.Add(Label23)
-        Panel2.Controls.Add(Label22)
-        Panel2.Controls.Add(Label21)
-        Panel2.Controls.Add(Label20)
-        Panel2.Controls.Add(Panel3)
-        Panel2.Location = New Point(375, 24)
-        Panel2.Name = "Panel2"
-        Panel2.Size = New Size(266, 309)
-        Panel2.TabIndex = 1
+        PanelStruk.BackColor = Color.LightGray
+        PanelStruk.BorderStyle = BorderStyle.FixedSingle
+        PanelStruk.Controls.Add(Label58)
+        PanelStruk.Controls.Add(Label57)
+        PanelStruk.Controls.Add(lblkembali)
+        PanelStruk.Controls.Add(lblbayar)
+        PanelStruk.Controls.Add(lbltagihan1)
+        PanelStruk.Controls.Add(lblpetugas1)
+        PanelStruk.Controls.Add(lblkeluar1)
+        PanelStruk.Controls.Add(lbldurasi1)
+        PanelStruk.Controls.Add(lblmasuk1)
+        PanelStruk.Controls.Add(Label47)
+        PanelStruk.Controls.Add(Label46)
+        PanelStruk.Controls.Add(Label45)
+        PanelStruk.Controls.Add(Label44)
+        PanelStruk.Controls.Add(Label43)
+        PanelStruk.Controls.Add(Label40)
+        PanelStruk.Controls.Add(Label37)
+        PanelStruk.Controls.Add(Label36)
+        PanelStruk.Controls.Add(Label35)
+        PanelStruk.Controls.Add(Label34)
+        PanelStruk.Controls.Add(Label29)
+        PanelStruk.Controls.Add(Label28)
+        PanelStruk.Controls.Add(Label27)
+        PanelStruk.Controls.Add(Label26)
+        PanelStruk.Controls.Add(lblnopol)
+        PanelStruk.Controls.Add(lbljenis1)
+        PanelStruk.Controls.Add(Label23)
+        PanelStruk.Controls.Add(Label22)
+        PanelStruk.Controls.Add(Label21)
+        PanelStruk.Controls.Add(Label20)
+        PanelStruk.Controls.Add(Panel3)
+        PanelStruk.Location = New Point(375, 24)
+        PanelStruk.Name = "PanelStruk"
+        PanelStruk.Size = New Size(266, 309)
+        PanelStruk.TabIndex = 1
         ' 
         ' Label58
         ' 
@@ -499,6 +500,16 @@ Partial Class FormPembayaran
         GroupBox1.TabStop = False
         GroupBox1.Text = "Tagihan"
         ' 
+        ' Label11
+        ' 
+        Label11.AutoSize = True
+        Label11.Font = New Font("Cambria", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label11.Location = New Point(128, 282)
+        Label11.Name = "Label11"
+        Label11.Size = New Size(22, 15)
+        Label11.TabIndex = 22
+        Label11.Text = "Rp"
+        ' 
         ' dtpKeluar
         ' 
         dtpKeluar.Font = New Font("Cambria", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
@@ -696,15 +707,8 @@ Partial Class FormPembayaran
         Label1.TabIndex = 6
         Label1.Text = "----------------------------- P E M B A Y A R A N -----------------------------"
         ' 
-        ' Label11
+        ' PrintDocument1
         ' 
-        Label11.AutoSize = True
-        Label11.Font = New Font("Cambria", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label11.Location = New Point(128, 282)
-        Label11.Name = "Label11"
-        Label11.Size = New Size(22, 15)
-        Label11.TabIndex = 22
-        Label11.Text = "Rp"
         ' 
         ' FormPembayaran
         ' 
@@ -719,8 +723,8 @@ Partial Class FormPembayaran
         Name = "FormPembayaran"
         Text = "FormPembayaran"
         Panel1.ResumeLayout(False)
-        Panel2.ResumeLayout(False)
-        Panel2.PerformLayout()
+        PanelStruk.ResumeLayout(False)
+        PanelStruk.PerformLayout()
         Panel3.ResumeLayout(False)
         Panel3.PerformLayout()
         GroupBox1.ResumeLayout(False)
@@ -749,7 +753,7 @@ Partial Class FormPembayaran
     Friend WithEvents lblmasuk As Label
     Friend WithEvents lblpetugas As Label
     Friend WithEvents lbljenis As Label
-    Friend WithEvents Panel2 As Panel
+    Friend WithEvents PanelStruk As Panel
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Label19 As Label
     Friend WithEvents Label20 As Label
@@ -786,4 +790,5 @@ Partial Class FormPembayaran
     Friend WithEvents dtpKeluar As DateTimePicker
     Friend WithEvents cbnopol As ComboBox
     Friend WithEvents Label11 As Label
+    Friend WithEvents PrintDocument1 As Printing.PrintDocument
 End Class

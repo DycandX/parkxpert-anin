@@ -1,4 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports System.Drawing.Printing
 
 Public Class FormPembayaran
 
@@ -103,6 +104,12 @@ Public Class FormPembayaran
         End If
 
         Dim totalTagihan As Decimal = Decimal.Parse(lbltagihan.Text, Globalization.NumberStyles.Currency, Globalization.CultureInfo.CreateSpecificCulture("id-ID"))
+
+        If jumlahBayar < totalTagihan Then
+            MessageBox.Show("Jumlah uang yang dibayarkan kurang.", "Error Pembayaran", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Return
+        End If
+
         Dim kembalian As Decimal = jumlahBayar - totalTagihan
         lblkembali.Text = "Rp" & kembalian.ToString("N2", Globalization.CultureInfo.CreateSpecificCulture("id-ID"))
 
@@ -159,4 +166,20 @@ Public Class FormPembayaran
         lbltagihan1.Text = "-"
         lblnopol.Text = "No Kendaraan"
     End Sub
+
+    Private Sub btnCetak_Click(sender As Object, e As EventArgs) Handles btnCetak.Click
+        PrintDocument1.Print()
+    End Sub
+
+    Private Function GetPanelImage(panel As Panel) As Bitmap
+        Dim bmp As New Bitmap(panel.Width, panel.Height)
+        panel.DrawToBitmap(bmp, New Rectangle(0, 0, panel.Width, panel.Height))
+        Return bmp
+    End Function
+
+    Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
+        Dim bmp As Bitmap = GetPanelImage(PanelStruk)
+        e.Graphics.DrawImage(bmp, 0, 0)
+    End Sub
+
 End Class
