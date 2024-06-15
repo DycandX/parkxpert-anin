@@ -21,21 +21,43 @@ Public Class frmInput
     End Sub
 
     Private Sub cbPetugas_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbPetugas.SelectedIndexChanged
-        DR.Close()
-        CMD = New MySqlCommand("SELECT * FROM pegawai WHERE Nama = '" & cbPetugas.Text & "'", conn)
-        DR = CMD.ExecuteReader
-        DR.Read()
+        Try
+            If conn.State = ConnectionState.Closed Then
+                conn.Open()
+            End If
+            DR.Close()
+            CMD = New MySqlCommand("SELECT * FROM pegawai WHERE Nama = @Nama", conn)
+            CMD.Parameters.AddWithValue("@Nama", cbPetugas.Text)
+            DR = CMD.ExecuteReader()
+            DR.Read()
+        Catch ex As Exception
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            DR.Close()
+            conn.Close()
+        End Try
     End Sub
 
     Private Sub cbKendaraan_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbKendaraan.SelectedIndexChanged
-        DR.Close()
-        CMD = New MySqlCommand("SELECT * FROM tarifkendaraan WHERE Jenis = '" & cbKendaraan.Text & "'", conn)
-        DR = CMD.ExecuteReader
-        If DR.Read() Then
-            txttarif.Text = DR("Tarif").ToString()
-        Else
-            txttarif.Text = ""
-        End If
+        Try
+            If conn.State = ConnectionState.Closed Then
+                conn.Open()
+            End If
+            DR.Close()
+            CMD = New MySqlCommand("SELECT * FROM tarifkendaraan WHERE Jenis = @Jenis", conn)
+            CMD.Parameters.AddWithValue("@Jenis", cbKendaraan.Text)
+            DR = CMD.ExecuteReader()
+            If DR.Read() Then
+                txttarif.Text = DR("Tarif").ToString()
+            Else
+                txttarif.Text = ""
+            End If
+        Catch ex As Exception
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            DR.Close()
+            conn.Close()
+        End Try
     End Sub
 
     Private Function GenerateParkirID() As String
