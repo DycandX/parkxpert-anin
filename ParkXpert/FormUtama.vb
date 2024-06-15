@@ -200,4 +200,29 @@ Public Class frmUtama
             End If
         Next
     End Sub
+
+    Private WithEvents tmrAnimation As New Timer()
+    Private Const Speed As Integer = 1 ' Kecepatan animasi yang lebih lambat
+    Private Const TimerInterval As Integer = 10 ' Interval timer yang lebih kecil untuk pergerakan lebih halus
+
+    Private Sub FormUtama_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        tmrAnimation.Interval = TimerInterval
+        tmrAnimation.Start()
+    End Sub
+
+    Private Sub tmrAnimation_Tick(sender As Object, e As EventArgs) Handles tmrAnimation.Tick
+        ' Ambil teks dari label
+        Dim text As String = lbljalan.Text
+
+        ' Geser teks ke kiri sesuai kecepatan
+        lbljalan.Left -= Speed
+
+        ' Jika teks keluar dari panel, kembalikan ke posisi awal di kanan panel
+        If lbljalan.Right < 0 Then
+            lbljalan.Left = Panel3.ClientSize.Width
+        End If
+
+        ' Memastikan responsivitas aplikasi
+        Application.DoEvents()
+    End Sub
 End Class

@@ -22,6 +22,7 @@ Partial Class frmUtama
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmUtama))
         Panel1 = New Panel()
         Panel6 = New Panel()
@@ -43,9 +44,12 @@ Partial Class frmUtama
         btnexit = New Button()
         btnmin = New Button()
         Body = New Panel()
+        lbljalan = New Label()
+        Timer1 = New Timer(components)
         Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel2.SuspendLayout()
+        Panel3.SuspendLayout()
         Panel5.SuspendLayout()
         Panel7.SuspendLayout()
         SuspendLayout()
@@ -217,6 +221,7 @@ Partial Class frmUtama
         ' 
         Panel3.BackColor = Color.MidnightBlue
         Panel3.BorderStyle = BorderStyle.FixedSingle
+        Panel3.Controls.Add(lbljalan)
         Panel3.Location = New Point(0, 548)
         Panel3.Name = "Panel3"
         Panel3.Size = New Size(300, 93)
@@ -294,6 +299,18 @@ Partial Class frmUtama
         Body.Size = New Size(1000, 617)
         Body.TabIndex = 4
         ' 
+        ' lbljalan
+        ' 
+        lbljalan.AutoSize = True
+        lbljalan.Font = New Font("Segoe Script", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbljalan.ForeColor = Color.Yellow
+        lbljalan.Location = New Point(-1, 24)
+        lbljalan.Margin = New Padding(0)
+        lbljalan.Name = "lbljalan"
+        lbljalan.Size = New Size(299, 44)
+        lbljalan.TabIndex = 5
+        lbljalan.Text = "HAVE A NICE DAY!"
+        ' 
         ' frmUtama
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -316,6 +333,8 @@ Partial Class frmUtama
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
+        Panel3.ResumeLayout(False)
+        Panel3.PerformLayout()
         Panel5.ResumeLayout(False)
         Panel7.ResumeLayout(False)
         ResumeLayout(False)
@@ -341,4 +360,6 @@ Partial Class frmUtama
     Friend WithEvents btnPembayaran As CheckBox
     Friend WithEvents btnKeuangan As CheckBox
     Friend WithEvents btnRiwayat As CheckBox
+    Friend WithEvents lbljalan As Label
+    Friend WithEvents Timer1 As Timer
 End Class
