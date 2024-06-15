@@ -3,6 +3,7 @@
 Public Class frmUtama
     Private isInputFormVisible As Boolean = False
     Private isPembayaranFormVisible As Boolean = False
+    Private isKeuanganFormVisible As Boolean = False
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
         koneksi()
@@ -115,4 +116,39 @@ Public Class frmUtama
         Next
     End Sub
 
+    Private Sub btnKeuangan_CheckedChanged(sender As Object, e As EventArgs) Handles btnKeuangan.CheckedChanged
+        If btnKeuangan.Checked Then ' Tombol ditekan
+            If Not isKeuanganFormVisible Then ' Jika form keuangan belum ditampilkan
+                TampilkanFormKeuangan() ' Tampilkan form keuangan
+                isKeuanganFormVisible = True ' Set status form keuangan menjadi ditampilkan
+            End If
+            ' Set the pembayaran button to unchecked
+            btnPembayaran.Checked = False
+        Else ' Tombol dilepas
+            If isKeuanganFormVisible Then ' Jika form keuangan sedang ditampilkan
+                TutupFormKeuangan() ' Tutup form keuangan
+                isKeuanganFormVisible = False ' Set status form keuangan menjadi disembunyikan
+            End If
+        End If
+    End Sub
+
+    Private Sub TampilkanFormKeuangan()
+        Dim frmKeuangan As New FormKeuangan()
+        frmKeuangan.TopLevel = False
+        frmKeuangan.FormBorderStyle = FormBorderStyle.None
+        frmKeuangan.Location = New Point(0, 0)
+        Body.Controls.Clear()
+        Body.Controls.Add(frmKeuangan)
+        frmKeuangan.Show()
+    End Sub
+
+    Private Sub TutupFormKeuangan()
+        ' Hapus form keuangan dari panel Body
+        For Each ctrl As Control In Body.Controls
+            If TypeOf ctrl Is FormKeuangan Then
+                Body.Controls.Remove(ctrl)
+                Exit For
+            End If
+        Next
+    End Sub
 End Class
