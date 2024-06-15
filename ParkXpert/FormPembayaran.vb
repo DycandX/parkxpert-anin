@@ -163,6 +163,10 @@ Public Class FormPembayaran
 
     ' Event saat Button Clear Click
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        ClearForm()
+    End Sub
+
+    Private Sub ClearForm()
         cbnopol.SelectedIndex = -1
         lblid.Text = "-"
         lbljenis.Text = "-"
@@ -205,6 +209,11 @@ Public Class FormPembayaran
         Dim newHeight As Integer = bmp.Height * 3.2
         Dim resizedBmp As New Bitmap(bmp, newWidth, newHeight)
         e.Graphics.DrawImage(resizedBmp, 0, 0, newWidth, newHeight)
+    End Sub
+
+    Private Sub PrintDocument1_EndPrint(sender As Object, e As PrintEventArgs) Handles PrintDocument1.EndPrint
+        MessageBox.Show("Struk pembayaran berhasil dicetak.", "Cetak Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        ClearForm()
     End Sub
 
 End Class
