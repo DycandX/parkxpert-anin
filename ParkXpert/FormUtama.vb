@@ -31,6 +31,8 @@ Public Class frmUtama
             End If
             ' Set the pembayaran button to unchecked
             btnPembayaran.Checked = False
+            btnRiwayat.Checked = False
+            btnKeuangan.Checked = False
         Else ' Tombol dilepas
             If isInputFormVisible Then ' Jika form input sedang ditampilkan
                 TutupFormInput() ' Tutup form input
@@ -89,6 +91,8 @@ Public Class frmUtama
             End If
             ' Set the input button to unchecked
             btnInput.Checked = False
+            btnRiwayat.Checked = False
+            btnKeuangan.Checked = False
         Else ' Tombol dilepas
             If isPembayaranFormVisible Then ' Jika form pembayaran sedang ditampilkan
                 TutupFormPembayaran() ' Tutup form pembayaran
@@ -124,7 +128,9 @@ Public Class frmUtama
                 isKeuanganFormVisible = True ' Set status form keuangan menjadi ditampilkan
             End If
             ' Set the pembayaran button to unchecked
+            btnInput.Checked = False
             btnPembayaran.Checked = False
+            btnRiwayat.Checked = False
         Else ' Tombol dilepas
             If isKeuanganFormVisible Then ' Jika form keuangan sedang ditampilkan
                 TutupFormKeuangan() ' Tutup form keuangan
