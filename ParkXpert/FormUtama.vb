@@ -137,6 +137,7 @@ Public Class frmUtama
         frmKeuangan.TopLevel = False
         frmKeuangan.FormBorderStyle = FormBorderStyle.None
         frmKeuangan.Location = New Point(0, 0)
+
         Body.Controls.Clear()
         Body.Controls.Add(frmKeuangan)
         frmKeuangan.Show()
