@@ -75,4 +75,66 @@ Public Class FormKeuangan
         ' Panggil kembali LoadDataGrid tanpa filter
         LoadDataGrid()
     End Sub
+
+    Private Sub btnImport_Click(sender As Object, e As EventArgs) Handles btnImport.Click
+        Dim excelApp As New Microsoft.Office.Interop.Excel.Application()
+        Dim workbook As Microsoft.Office.Interop.Excel.Workbook = Nothing
+        Dim worksheet As Microsoft.Office.Interop.Excel.Worksheet = Nothing
+
+        Try
+            ' Menampilkan Excel
+            excelApp.Visible = True
+
+            ' Membuat workbook baru
+            workbook = excelApp.Workbooks.Add(Type.Missing)
+            worksheet = workbook.ActiveSheet
+            worksheet.Name = "Laporan Keuangan"
+
+            ' Menulis header kolom
+            For j As Integer = 0 To DataGridView1.Columns.Count - 1
+                worksheet.Cells(1, j + 1) = DataGridView1.Columns(j).HeaderText
+            Next
+
+            ' Menulis data dari DataGridView
+            For i As Integer = 0 To DataGridView1.Rows.Count - 1
+                For j As Integer = 0 To DataGridView1.Columns.Count - 1
+                    worksheet.Cells(i + 2, j + 1) = DataGridView1.Rows(i).Cells(j).Value.ToString()
+                    DirectCast(worksheet.Cells(i + 2, j + 1), Microsoft.Office.Interop.Excel.Range).HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignCenter
+                Next
+            Next
+
+            ' Simpan workbook ke file Excel
+            Dim saveDialog As New SaveFileDialog()
+            saveDialog.Filter = "Excel files (*.xlsx)|*.xlsx|All files (*.*)|*.*"
+            saveDialog.FilterIndex = 1
+
+            If saveDialog.ShowDialog() = DialogResult.OK Then
+                workbook.SaveAs(saveDialog.FileName)
+                MessageBox.Show("Berhasil Mengimpor Data Ke Excel.", "Export Berhasil!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End If
+        Catch ex As Exception
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            ' Membersihkan objek Excel
+            workbook?.Close(SaveChanges:=False)
+            excelApp.Quit()
+
+            ReleaseObject(worksheet)
+            ReleaseObject(workbook)
+            ReleaseObject(excelApp)
+        End Try
+    End Sub
+
+    Private Sub ReleaseObject(ByVal obj As Object)
+        Try
+            If obj IsNot Nothing Then
+                System.Runtime.InteropServices.Marshal.ReleaseComObject(obj)
+                obj = Nothing
+            End If
+        Catch ex As Exception
+            obj = Nothing
+        Finally
+            GC.Collect()
+        End Try
+    End Sub
 End Class
