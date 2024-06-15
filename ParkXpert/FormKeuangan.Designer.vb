@@ -30,7 +30,6 @@ Partial Class FormKeuangan
         cbFilter = New ComboBox()
         Panel3 = New Panel()
         Button2 = New Button()
-        btnRefresh = New Button()
         Panel1.SuspendLayout()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         Panel2.SuspendLayout()
@@ -69,8 +68,9 @@ Partial Class FormKeuangan
         ' 
         ' Panel2
         ' 
+        Panel2.BorderStyle = BorderStyle.FixedSingle
         Panel2.Controls.Add(cbFilter)
-        Panel2.Location = New Point(334, 494)
+        Panel2.Location = New Point(333, 494)
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(193, 100)
         Panel2.TabIndex = 2
@@ -79,6 +79,7 @@ Partial Class FormKeuangan
         ' 
         cbFilter.BackColor = SystemColors.Window
         cbFilter.FlatStyle = FlatStyle.Flat
+        cbFilter.Font = New Font("Cambria", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         cbFilter.FormattingEnabled = True
         cbFilter.Location = New Point(15, 39)
         cbFilter.Name = "cbFilter"
@@ -87,9 +88,9 @@ Partial Class FormKeuangan
         ' 
         ' Panel3
         ' 
+        Panel3.BorderStyle = BorderStyle.FixedSingle
         Panel3.Controls.Add(Button2)
-        Panel3.Controls.Add(btnRefresh)
-        Panel3.Location = New Point(526, 494)
+        Panel3.Location = New Point(525, 494)
         Panel3.Name = "Panel3"
         Panel3.Size = New Size(135, 100)
         Panel3.TabIndex = 3
@@ -99,24 +100,12 @@ Partial Class FormKeuangan
         Button2.FlatStyle = FlatStyle.Flat
         Button2.Font = New Font("Cambria", 11.25F)
         Button2.ForeColor = Color.White
-        Button2.Location = New Point(5, 53)
+        Button2.Location = New Point(4, 35)
         Button2.Name = "Button2"
         Button2.Size = New Size(125, 31)
         Button2.TabIndex = 1
         Button2.Text = "Import to Excel"
         Button2.UseVisualStyleBackColor = True
-        ' 
-        ' btnRefresh
-        ' 
-        btnRefresh.FlatStyle = FlatStyle.Flat
-        btnRefresh.Font = New Font("Cambria", 11.25F)
-        btnRefresh.ForeColor = Color.White
-        btnRefresh.Location = New Point(5, 16)
-        btnRefresh.Name = "btnRefresh"
-        btnRefresh.Size = New Size(125, 31)
-        btnRefresh.TabIndex = 0
-        btnRefresh.Text = "Refresh Tabel"
-        btnRefresh.UseVisualStyleBackColor = True
         ' 
         ' FormKeuangan
         ' 
@@ -146,6 +135,5 @@ Partial Class FormKeuangan
     Friend WithEvents cbFilter As ComboBox
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Button2 As Button
-    Friend WithEvents btnRefresh As Button
     Friend WithEvents DataGridView1 As DataGridView
 End Class
