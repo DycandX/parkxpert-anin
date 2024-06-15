@@ -24,11 +24,12 @@ Partial Class FormRiwayat
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormRiwayat))
         Panel2 = New Panel()
+        btnSearch = New Button()
         btnFilterKeluar = New Button()
         btnRefresh = New Button()
         btnFilterMasuk = New Button()
         DateTimePicker1 = New DateTimePicker()
-        TextBox1 = New TextBox()
+        txtsearch = New TextBox()
         Label1 = New Label()
         Panel1 = New Panel()
         DataGridView1 = New DataGridView()
@@ -40,15 +41,28 @@ Partial Class FormRiwayat
         ' Panel2
         ' 
         Panel2.BorderStyle = BorderStyle.FixedSingle
+        Panel2.Controls.Add(btnSearch)
         Panel2.Controls.Add(btnFilterKeluar)
         Panel2.Controls.Add(btnRefresh)
         Panel2.Controls.Add(btnFilterMasuk)
         Panel2.Controls.Add(DateTimePicker1)
-        Panel2.Controls.Add(TextBox1)
+        Panel2.Controls.Add(txtsearch)
         Panel2.Location = New Point(12, 498)
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(976, 107)
         Panel2.TabIndex = 6
+        ' 
+        ' btnSearch
+        ' 
+        btnSearch.FlatStyle = FlatStyle.Flat
+        btnSearch.Font = New Font("Cambria", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnSearch.ForeColor = Color.White
+        btnSearch.Location = New Point(16, 50)
+        btnSearch.Name = "btnSearch"
+        btnSearch.Size = New Size(177, 33)
+        btnSearch.TabIndex = 5
+        btnSearch.Text = "S E A R C H   N O P O L"
+        btnSearch.UseVisualStyleBackColor = True
         ' 
         ' btnFilterKeluar
         ' 
@@ -94,13 +108,15 @@ Partial Class FormRiwayat
         DateTimePicker1.Size = New Size(203, 23)
         DateTimePicker1.TabIndex = 1
         ' 
-        ' TextBox1
+        ' txtsearch
         ' 
-        TextBox1.BorderStyle = BorderStyle.FixedSingle
-        TextBox1.Location = New Point(16, 21)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(177, 23)
-        TextBox1.TabIndex = 0
+        txtsearch.BorderStyle = BorderStyle.FixedSingle
+        txtsearch.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        txtsearch.Location = New Point(16, 21)
+        txtsearch.Name = "txtsearch"
+        txtsearch.Size = New Size(177, 25)
+        txtsearch.TabIndex = 0
+        txtsearch.TextAlign = HorizontalAlignment.Center
         ' 
         ' Label1
         ' 
@@ -157,8 +173,9 @@ Partial Class FormRiwayat
     Friend WithEvents Panel1 As Panel
     Friend WithEvents btnFilterMasuk As Button
     Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtsearch As TextBox
     Friend WithEvents btnRefresh As Button
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents btnFilterKeluar As Button
+    Friend WithEvents btnSearch As Button
 End Class

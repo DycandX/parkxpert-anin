@@ -61,4 +61,31 @@ Public Class FormRiwayat
         ' Muat ulang DataGridView tanpa filter
         LoadDataGrid()
     End Sub
+
+    Private Sub btnSearch_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
+        ' Ambil teks dari TextBox pencarian (txtSearch)
+        Dim searchTerm As String = txtsearch.Text.Trim()
+
+        ' Atur warna default kembali ke Transparent untuk semua baris
+        For Each row As DataGridViewRow In DataGridView1.Rows
+            row.DefaultCellStyle.BackColor = Color.Transparent
+        Next
+
+        ' Lakukan pencarian di DataGridView
+        Dim found As Boolean = False
+        For Each row As DataGridViewRow In DataGridView1.Rows
+            If row.Cells("NoKendaraan").Value IsNot Nothing AndAlso row.Cells("NoKendaraan").Value.ToString().Equals(searchTerm, StringComparison.OrdinalIgnoreCase) Then
+                ' Jika ditemukan, atur warna latar belakang baris menjadi kuning
+                row.DefaultCellStyle.BackColor = Color.Yellow
+                DataGridView1.CurrentCell = row.Cells(0) ' Atur sel yang sedang aktif
+                found = True
+                Exit For
+            End If
+        Next
+
+        ' Jika tidak ditemukan, tampilkan pesan kesalahan
+        If Not found Then
+            MessageBox.Show($"Nomor kendaraan '{searchTerm}' tidak ditemukan.")
+        End If
+    End Sub
 End Class
