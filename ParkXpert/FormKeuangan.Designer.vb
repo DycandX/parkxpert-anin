@@ -30,6 +30,7 @@ Partial Class FormKeuangan
         cbFilter = New ComboBox()
         Panel3 = New Panel()
         btnImport = New Button()
+        btnRefresh = New Button()
         Panel1.SuspendLayout()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         Panel2.SuspendLayout()
@@ -89,6 +90,7 @@ Partial Class FormKeuangan
         ' Panel3
         ' 
         Panel3.BorderStyle = BorderStyle.FixedSingle
+        Panel3.Controls.Add(btnRefresh)
         Panel3.Controls.Add(btnImport)
         Panel3.Location = New Point(525, 494)
         Panel3.Name = "Panel3"
@@ -100,12 +102,24 @@ Partial Class FormKeuangan
         btnImport.FlatStyle = FlatStyle.Flat
         btnImport.Font = New Font("Cambria", 11.25F)
         btnImport.ForeColor = Color.White
-        btnImport.Location = New Point(4, 35)
+        btnImport.Location = New Point(4, 52)
         btnImport.Name = "btnImport"
         btnImport.Size = New Size(125, 31)
         btnImport.TabIndex = 1
         btnImport.Text = "Import to Excel"
         btnImport.UseVisualStyleBackColor = True
+        ' 
+        ' btnRefresh
+        ' 
+        btnRefresh.FlatStyle = FlatStyle.Flat
+        btnRefresh.Font = New Font("Cambria", 11.25F)
+        btnRefresh.ForeColor = Color.White
+        btnRefresh.Location = New Point(4, 15)
+        btnRefresh.Name = "btnRefresh"
+        btnRefresh.Size = New Size(125, 31)
+        btnRefresh.TabIndex = 2
+        btnRefresh.Text = "Refresh Table"
+        btnRefresh.UseVisualStyleBackColor = True
         ' 
         ' FormKeuangan
         ' 
@@ -136,4 +150,5 @@ Partial Class FormKeuangan
     Friend WithEvents Panel3 As Panel
     Friend WithEvents btnImport As Button
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents btnRefresh As Button
 End Class

@@ -34,4 +34,31 @@ Public Class FormRiwayat
             MessageBox.Show("Error: " & ex.Message)
         End Try
     End Sub
+
+    Private Sub btnFilterMasuk_Click(sender As Object, e As EventArgs) Handles btnFilterMasuk.Click
+        ' Ambil tanggal dari DateTimePicker
+        Dim filterDate As String = DateTimePicker1.Value.ToString("yyyy-MM-dd")
+
+        ' Buat filter berdasarkan tanggal WaktuMasuk
+        Dim filter As String = $"DATE(WaktuMasuk) = '{filterDate}'"
+
+        ' Muat ulang DataGridView dengan filter yang diberikan
+        LoadDataGrid(filter)
+    End Sub
+
+    Private Sub btnFilterKeluar_Click(sender As Object, e As EventArgs) Handles btnFilterKeluar.Click
+        ' Ambil tanggal dari DateTimePicker
+        Dim filterDate As String = DateTimePicker1.Value.ToString("yyyy-MM-dd")
+
+        ' Buat filter berdasarkan tanggal WaktuKeluar
+        Dim filter As String = $"DATE(WaktuKeluar) = '{filterDate}'"
+
+        ' Muat ulang DataGridView dengan filter yang diberikan
+        LoadDataGrid(filter)
+    End Sub
+
+    Private Sub btnRefresh_Click(sender As Object, e As EventArgs) Handles btnRefresh.Click
+        ' Muat ulang DataGridView tanpa filter
+        LoadDataGrid()
+    End Sub
 End Class

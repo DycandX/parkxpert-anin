@@ -71,4 +71,8 @@ Public Class FormKeuangan
         LoadDataGrid(filter)
     End Sub
 
+    Private Sub btnRefresh_Click(sender As Object, e As EventArgs) Handles btnRefresh.Click
+        ' Panggil kembali LoadDataGrid tanpa filter
+        LoadDataGrid()
+    End Sub
 End Class
