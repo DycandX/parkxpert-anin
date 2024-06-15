@@ -29,7 +29,7 @@ Partial Class FormKeuangan
         Panel2 = New Panel()
         cbFilter = New ComboBox()
         Panel3 = New Panel()
-        Button2 = New Button()
+        btnImport = New Button()
         Panel1.SuspendLayout()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         Panel2.SuspendLayout()
@@ -89,23 +89,23 @@ Partial Class FormKeuangan
         ' Panel3
         ' 
         Panel3.BorderStyle = BorderStyle.FixedSingle
-        Panel3.Controls.Add(Button2)
+        Panel3.Controls.Add(btnImport)
         Panel3.Location = New Point(525, 494)
         Panel3.Name = "Panel3"
         Panel3.Size = New Size(135, 100)
         Panel3.TabIndex = 3
         ' 
-        ' Button2
+        ' btnImport
         ' 
-        Button2.FlatStyle = FlatStyle.Flat
-        Button2.Font = New Font("Cambria", 11.25F)
-        Button2.ForeColor = Color.White
-        Button2.Location = New Point(4, 35)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(125, 31)
-        Button2.TabIndex = 1
-        Button2.Text = "Import to Excel"
-        Button2.UseVisualStyleBackColor = True
+        btnImport.FlatStyle = FlatStyle.Flat
+        btnImport.Font = New Font("Cambria", 11.25F)
+        btnImport.ForeColor = Color.White
+        btnImport.Location = New Point(4, 35)
+        btnImport.Name = "btnImport"
+        btnImport.Size = New Size(125, 31)
+        btnImport.TabIndex = 1
+        btnImport.Text = "Import to Excel"
+        btnImport.UseVisualStyleBackColor = True
         ' 
         ' FormKeuangan
         ' 
@@ -134,6 +134,6 @@ Partial Class FormKeuangan
     Friend WithEvents Panel2 As Panel
     Friend WithEvents cbFilter As ComboBox
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnImport As Button
     Friend WithEvents DataGridView1 As DataGridView
 End Class

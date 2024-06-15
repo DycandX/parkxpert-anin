@@ -4,6 +4,7 @@ Public Class frmUtama
     Private isInputFormVisible As Boolean = False
     Private isPembayaranFormVisible As Boolean = False
     Private isKeuanganFormVisible As Boolean = False
+    Private isRiwayatFormVisible As Boolean = False
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
         koneksi()
@@ -147,6 +148,47 @@ Public Class frmUtama
         ' Hapus form keuangan dari panel Body
         For Each ctrl As Control In Body.Controls
             If TypeOf ctrl Is FormKeuangan Then
+                Body.Controls.Remove(ctrl)
+                Exit For
+            End If
+        Next
+    End Sub
+
+    Private Sub btnRiwayat_CheckedChanged(sender As Object, e As EventArgs) Handles btnRiwayat.CheckedChanged
+        If btnRiwayat.Checked Then ' Tombol ditekan
+            If Not isRiwayatFormVisible Then ' Jika form riwayat belum ditampilkan
+                TampilkanFormRiwayat() ' Tampilkan form riwayat
+                isRiwayatFormVisible = True ' Set status form riwayat menjadi ditampilkan
+            End If
+            ' Pastikan tombol input dan pembayaran tidak tercentang
+            btnInput.Checked = False
+            btnPembayaran.Checked = False
+            btnKeuangan.Checked = False
+        Else ' Tombol dilepas
+            If isRiwayatFormVisible Then ' Jika form riwayat sedang ditampilkan
+                TutupFormRiwayat() ' Tutup form riwayat
+                isRiwayatFormVisible = False ' Set status form riwayat menjadi disembunyikan
+            End If
+        End If
+    End Sub
+
+    ' Metode untuk menampilkan form riwayat di panel Body
+    Private Sub TampilkanFormRiwayat()
+        Dim frmRiwayat As New FormRiwayat()
+        frmRiwayat.TopLevel = False
+        frmRiwayat.FormBorderStyle = FormBorderStyle.None
+        frmRiwayat.Location = New Point(0, 0)
+
+        Body.Controls.Clear()
+        Body.Controls.Add(frmRiwayat)
+        frmRiwayat.Show()
+    End Sub
+
+    ' Metode untuk menutup form riwayat dari panel Body
+    Private Sub TutupFormRiwayat()
+        ' Hapus form riwayat dari panel Body
+        For Each ctrl As Control In Body.Controls
+            If TypeOf ctrl Is FormRiwayat Then
                 Body.Controls.Remove(ctrl)
                 Exit For
             End If

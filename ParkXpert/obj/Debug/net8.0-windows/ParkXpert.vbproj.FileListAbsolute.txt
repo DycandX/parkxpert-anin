@@ -120,3 +120,5 @@ C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin
 C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\obj\Debug\net8.0-windows\ref\ParkXpert.dll
 C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\bin\Debug\net8.0-windows\QRCoder.dll
 E:\_PROJECT\ParkXpert-anin\ParkXpert\bin\Debug\net8.0-windows\QRCoder.dll
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\obj\Debug\net8.0-windows\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.vbproj.ResolveComReference.cache
