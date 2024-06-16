@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("ParkXpert"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+25e7c4cc8066108778aa0f79b98bda69acc2f280"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68241a5b50ecd3f3e01cc96c0455105e7fa17a13"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("ParkXpert"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("ParkXpert"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

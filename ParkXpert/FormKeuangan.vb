@@ -77,12 +77,19 @@ Public Class FormKeuangan
     End Sub
 
     Private Sub btnImport_Click(sender As Object, e As EventArgs) Handles btnImport.Click
-        Dim excelApp As New Microsoft.Office.Interop.Excel.Application()
+        Dim excelApp As Microsoft.Office.Interop.Excel.Application = Nothing
         Dim workbook As Microsoft.Office.Interop.Excel.Workbook = Nothing
         Dim worksheet As Microsoft.Office.Interop.Excel.Worksheet = Nothing
 
         Try
-            ' Menampilkan Excel
+            ' Check if DataGridView has data
+            If DataGridView1.Rows.Count = 0 Then
+                MessageBox.Show("Tidak ada data untuk diimpor.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Exit Sub
+            End If
+
+            ' Membuat aplikasi Excel
+            excelApp = New Microsoft.Office.Interop.Excel.Application()
             excelApp.Visible = True
 
             ' Membuat workbook baru
@@ -93,13 +100,16 @@ Public Class FormKeuangan
             ' Menulis header kolom
             For j As Integer = 0 To DataGridView1.Columns.Count - 1
                 worksheet.Cells(1, j + 1) = DataGridView1.Columns(j).HeaderText
+                DirectCast(worksheet.Cells(1, j + 1), Microsoft.Office.Interop.Excel.Range).HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignCenter
             Next
 
             ' Menulis data dari DataGridView
             For i As Integer = 0 To DataGridView1.Rows.Count - 1
                 For j As Integer = 0 To DataGridView1.Columns.Count - 1
-                    worksheet.Cells(i + 2, j + 1) = DataGridView1.Rows(i).Cells(j).Value.ToString()
-                    DirectCast(worksheet.Cells(i + 2, j + 1), Microsoft.Office.Interop.Excel.Range).HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignCenter
+                    If DataGridView1.Rows(i).Cells(j).Value IsNot Nothing Then
+                        worksheet.Cells(i + 2, j + 1) = DataGridView1.Rows(i).Cells(j).Value.ToString()
+                        DirectCast(worksheet.Cells(i + 2, j + 1), Microsoft.Office.Interop.Excel.Range).HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignCenter
+                    End If
                 Next
             Next
 
@@ -116,12 +126,15 @@ Public Class FormKeuangan
             MessageBox.Show("Error: " & ex.Message)
         Finally
             ' Membersihkan objek Excel
-            workbook?.Close(SaveChanges:=False)
-            excelApp.Quit()
-
+            If workbook IsNot Nothing Then
+                workbook.Close(SaveChanges:=False)
+                ReleaseObject(workbook)
+            End If
+            If excelApp IsNot Nothing Then
+                excelApp.Quit()
+                ReleaseObject(excelApp)
+            End If
             ReleaseObject(worksheet)
-            ReleaseObject(workbook)
-            ReleaseObject(excelApp)
         End Try
     End Sub
 
