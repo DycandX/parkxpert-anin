@@ -22,6 +22,7 @@ Partial Class frmUtama
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmUtama))
         Panel1 = New Panel()
         Panel6 = New Panel()
@@ -31,6 +32,9 @@ Partial Class frmUtama
         profilNama = New Label()
         PictureBox1 = New PictureBox()
         Panel2 = New Panel()
+        btnKeuangan = New CheckBox()
+        btnRiwayat = New CheckBox()
+        btnPembayaran = New CheckBox()
         btnInput = New CheckBox()
         Panel3 = New Panel()
         Panel4 = New Panel()
@@ -40,10 +44,12 @@ Partial Class frmUtama
         btnexit = New Button()
         btnmin = New Button()
         Body = New Panel()
-        btnPembayaran = New CheckBox()
+        lbljalan = New Label()
+        Timer1 = New Timer(components)
         Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel2.SuspendLayout()
+        Panel3.SuspendLayout()
         Panel5.SuspendLayout()
         Panel7.SuspendLayout()
         SuspendLayout()
@@ -51,6 +57,7 @@ Partial Class frmUtama
         ' Panel1
         ' 
         Panel1.BackColor = Color.MidnightBlue
+        Panel1.BorderStyle = BorderStyle.FixedSingle
         Panel1.Controls.Add(Panel6)
         Panel1.Controls.Add(Label1)
         Panel1.Controls.Add(profilAkses)
@@ -129,12 +136,68 @@ Partial Class frmUtama
         ' Panel2
         ' 
         Panel2.BackColor = Color.MidnightBlue
+        Panel2.Controls.Add(btnKeuangan)
+        Panel2.Controls.Add(btnRiwayat)
         Panel2.Controls.Add(btnPembayaran)
         Panel2.Controls.Add(btnInput)
         Panel2.Location = New Point(0, 140)
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(300, 407)
         Panel2.TabIndex = 1
+        ' 
+        ' btnKeuangan
+        ' 
+        btnKeuangan.Appearance = Appearance.Button
+        btnKeuangan.AutoSize = True
+        btnKeuangan.BackgroundImageLayout = ImageLayout.None
+        btnKeuangan.FlatStyle = FlatStyle.Flat
+        btnKeuangan.Font = New Font("Sitka Small", 15.7499981F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnKeuangan.ForeColor = Color.White
+        btnKeuangan.Image = CType(resources.GetObject("btnKeuangan.Image"), Image)
+        btnKeuangan.ImageAlign = ContentAlignment.MiddleLeft
+        btnKeuangan.Location = New Point(-2, 158)
+        btnKeuangan.Name = "btnKeuangan"
+        btnKeuangan.Size = New Size(306, 46)
+        btnKeuangan.TabIndex = 4
+        btnKeuangan.Text = "KEUANGAN                    "
+        btnKeuangan.TextImageRelation = TextImageRelation.ImageBeforeText
+        btnKeuangan.UseVisualStyleBackColor = False
+        ' 
+        ' btnRiwayat
+        ' 
+        btnRiwayat.Appearance = Appearance.Button
+        btnRiwayat.AutoSize = True
+        btnRiwayat.BackgroundImageLayout = ImageLayout.None
+        btnRiwayat.FlatStyle = FlatStyle.Flat
+        btnRiwayat.Font = New Font("Sitka Small", 15.7499981F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnRiwayat.ForeColor = Color.White
+        btnRiwayat.Image = CType(resources.GetObject("btnRiwayat.Image"), Image)
+        btnRiwayat.ImageAlign = ContentAlignment.MiddleLeft
+        btnRiwayat.Location = New Point(-3, 107)
+        btnRiwayat.Name = "btnRiwayat"
+        btnRiwayat.Size = New Size(305, 46)
+        btnRiwayat.TabIndex = 3
+        btnRiwayat.Text = "RIWAYAT                        "
+        btnRiwayat.TextImageRelation = TextImageRelation.ImageBeforeText
+        btnRiwayat.UseVisualStyleBackColor = False
+        ' 
+        ' btnPembayaran
+        ' 
+        btnPembayaran.Appearance = Appearance.Button
+        btnPembayaran.AutoSize = True
+        btnPembayaran.BackgroundImageLayout = ImageLayout.None
+        btnPembayaran.FlatStyle = FlatStyle.Flat
+        btnPembayaran.Font = New Font("Sitka Small", 15.7499981F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnPembayaran.ForeColor = Color.White
+        btnPembayaran.Image = CType(resources.GetObject("btnPembayaran.Image"), Image)
+        btnPembayaran.ImageAlign = ContentAlignment.MiddleLeft
+        btnPembayaran.Location = New Point(-1, 56)
+        btnPembayaran.Name = "btnPembayaran"
+        btnPembayaran.Size = New Size(306, 46)
+        btnPembayaran.TabIndex = 2
+        btnPembayaran.Text = "PEMBAYARAN                "
+        btnPembayaran.TextImageRelation = TextImageRelation.ImageBeforeText
+        btnPembayaran.UseVisualStyleBackColor = False
         ' 
         ' btnInput
         ' 
@@ -146,7 +209,7 @@ Partial Class frmUtama
         btnInput.ForeColor = Color.White
         btnInput.Image = CType(resources.GetObject("btnInput.Image"), Image)
         btnInput.ImageAlign = ContentAlignment.MiddleLeft
-        btnInput.Location = New Point(-1, -1)
+        btnInput.Location = New Point(-1, 5)
         btnInput.Name = "btnInput"
         btnInput.Size = New Size(305, 46)
         btnInput.TabIndex = 1
@@ -157,6 +220,8 @@ Partial Class frmUtama
         ' Panel3
         ' 
         Panel3.BackColor = Color.MidnightBlue
+        Panel3.BorderStyle = BorderStyle.FixedSingle
+        Panel3.Controls.Add(lbljalan)
         Panel3.Location = New Point(0, 548)
         Panel3.Name = "Panel3"
         Panel3.Size = New Size(300, 93)
@@ -165,6 +230,7 @@ Partial Class frmUtama
         ' Panel4
         ' 
         Panel4.BackColor = Color.LimeGreen
+        Panel4.BorderStyle = BorderStyle.FixedSingle
         Panel4.Location = New Point(0, 640)
         Panel4.Name = "Panel4"
         Panel4.Size = New Size(1300, 8)
@@ -173,6 +239,7 @@ Partial Class frmUtama
         ' Panel5
         ' 
         Panel5.BackColor = Color.LimeGreen
+        Panel5.BorderStyle = BorderStyle.FixedSingle
         Panel5.Controls.Add(Panel7)
         Panel5.Controls.Add(btnexit)
         Panel5.Controls.Add(btnmin)
@@ -232,23 +299,17 @@ Partial Class frmUtama
         Body.Size = New Size(1000, 617)
         Body.TabIndex = 4
         ' 
-        ' btnPembayaran
+        ' lbljalan
         ' 
-        btnPembayaran.Appearance = Appearance.Button
-        btnPembayaran.AutoSize = True
-        btnPembayaran.BackgroundImageLayout = ImageLayout.None
-        btnPembayaran.FlatStyle = FlatStyle.Flat
-        btnPembayaran.Font = New Font("Sitka Small", 15.7499981F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnPembayaran.ForeColor = Color.White
-        btnPembayaran.Image = CType(resources.GetObject("btnPembayaran.Image"), Image)
-        btnPembayaran.ImageAlign = ContentAlignment.MiddleLeft
-        btnPembayaran.Location = New Point(-2, 49)
-        btnPembayaran.Name = "btnPembayaran"
-        btnPembayaran.Size = New Size(306, 46)
-        btnPembayaran.TabIndex = 2
-        btnPembayaran.Text = "PEMBAYARAN                "
-        btnPembayaran.TextImageRelation = TextImageRelation.ImageBeforeText
-        btnPembayaran.UseVisualStyleBackColor = False
+        lbljalan.AutoSize = True
+        lbljalan.Font = New Font("Segoe Script", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbljalan.ForeColor = Color.Yellow
+        lbljalan.Location = New Point(-1, 24)
+        lbljalan.Margin = New Padding(0)
+        lbljalan.Name = "lbljalan"
+        lbljalan.Size = New Size(299, 44)
+        lbljalan.TabIndex = 5
+        lbljalan.Text = "HAVE A NICE DAY!"
         ' 
         ' frmUtama
         ' 
@@ -272,6 +333,8 @@ Partial Class frmUtama
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
+        Panel3.ResumeLayout(False)
+        Panel3.PerformLayout()
         Panel5.ResumeLayout(False)
         Panel7.ResumeLayout(False)
         ResumeLayout(False)
@@ -295,4 +358,8 @@ Partial Class frmUtama
     Friend WithEvents Panel8 As Panel
     Friend WithEvents Body As Panel
     Friend WithEvents btnPembayaran As CheckBox
+    Friend WithEvents btnKeuangan As CheckBox
+    Friend WithEvents btnRiwayat As CheckBox
+    Friend WithEvents lbljalan As Label
+    Friend WithEvents Timer1 As Timer
 End Class

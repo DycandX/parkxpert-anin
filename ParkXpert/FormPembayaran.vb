@@ -1,4 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports System.Drawing.Printing
 
 Public Class FormPembayaran
 
@@ -76,12 +77,17 @@ Public Class FormPembayaran
             tarifPerJam = Convert.ToDecimal(CMD.ExecuteScalar())
 
             ' Jika durasi kurang dari satu jam, tetap gunakan tarif per jam tanpa mengalikan dengan durasi
+            Dim totalTarif As Decimal
             If durasi.TotalHours < 1 Then
-                lbltagihan.Text = "Rp" & tarifPerJam.ToString("N2", Globalization.CultureInfo.CreateSpecificCulture("id-ID"))
+                totalTarif = tarifPerJam
             Else
-                Dim totalTarif As Decimal = durasi.TotalHours * tarifPerJam
-                lbltagihan.Text = "Rp" & totalTarif.ToString("N2", Globalization.CultureInfo.CreateSpecificCulture("id-ID"))
+                totalTarif = durasi.TotalHours * tarifPerJam
             End If
+
+            ' Bulatkan ke ribuan terdekat
+            Dim totalTarifBulanan As Decimal = Math.Ceiling(totalTarif / 1000) * 1000
+
+            lbltagihan.Text = "Rp" & totalTarifBulanan.ToString("N0", Globalization.CultureInfo.CreateSpecificCulture("id-ID")) & ",00"
         Catch ex As Exception
             MessageBox.Show("Error: " & ex.Message)
         End Try
@@ -97,6 +103,12 @@ Public Class FormPembayaran
         End If
 
         Dim totalTagihan As Decimal = Decimal.Parse(lbltagihan.Text, Globalization.NumberStyles.Currency, Globalization.CultureInfo.CreateSpecificCulture("id-ID"))
+
+        If jumlahBayar < totalTagihan Then
+            MessageBox.Show("Jumlah uang yang dibayarkan kurang.", "Error Pembayaran", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Return
+        End If
+
         Dim kembalian As Decimal = jumlahBayar - totalTagihan
         lblkembali.Text = "Rp" & kembalian.ToString("N2", Globalization.CultureInfo.CreateSpecificCulture("id-ID"))
 
@@ -112,6 +124,23 @@ Public Class FormPembayaran
             CMD.Parameters.AddWithValue("@TotalTarif", totalTagihan)
             CMD.Parameters.AddWithValue("@JumlahBayar", jumlahBayar)
             CMD.Parameters.AddWithValue("@Kembalian", kembalian)
+            CMD.ExecuteNonQuery()
+
+            ' Masukkan data ke tabel riwayatkendaraan
+            Dim queryRiwayat As String = "INSERT INTO riwayatkendaraan (IDParkir, NoKendaraan, Jenis, WaktuMasuk, WaktuKeluar, NamaPetugas) VALUES (@IDParkir, @NoKendaraan, @Jenis, @WaktuMasuk, @WaktuKeluar, @NamaPetugas)"
+            CMD = New MySqlCommand(queryRiwayat, conn)
+            CMD.Parameters.AddWithValue("@IDParkir", lblid.Text)
+            CMD.Parameters.AddWithValue("@NoKendaraan", cbnopol.SelectedItem.ToString())
+            CMD.Parameters.AddWithValue("@Jenis", lbljenis.Text)
+            CMD.Parameters.AddWithValue("@WaktuMasuk", DateTime.Parse(lblmasuk.Text))
+            CMD.Parameters.AddWithValue("@WaktuKeluar", dtpKeluar.Value)
+            CMD.Parameters.AddWithValue("@NamaPetugas", lblpetugas.Text)
+            CMD.ExecuteNonQuery()
+
+            ' Hapus data dari tabel kendaraan
+            Dim queryDelete As String = "DELETE FROM kendaraan WHERE NoKendaraan = @NoKendaraan"
+            CMD = New MySqlCommand(queryDelete, conn)
+            CMD.Parameters.AddWithValue("@NoKendaraan", cbnopol.SelectedItem.ToString())
             CMD.ExecuteNonQuery()
 
             ' Set nilai label-label baru
@@ -134,6 +163,10 @@ Public Class FormPembayaran
 
     ' Event saat Button Clear Click
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        ClearForm()
+    End Sub
+
+    Private Sub ClearForm()
         cbnopol.SelectedIndex = -1
         lblid.Text = "-"
         lbljenis.Text = "-"
@@ -153,4 +186,34 @@ Public Class FormPembayaran
         lbltagihan1.Text = "-"
         lblnopol.Text = "No Kendaraan"
     End Sub
+
+    Private Sub btnCetak_Click(sender As Object, e As EventArgs) Handles btnCetak.Click
+        Using printDialog As New PrintDialog()
+            printDialog.Document = PrintDocument1
+            If printDialog.ShowDialog() = DialogResult.OK Then
+                PrintDocument1.Print()
+            End If
+        End Using
+    End Sub
+
+    Private Function GetPanelImage(panel As Panel, Optional dpi As Integer = 300) As Bitmap
+        Dim bmp As New Bitmap(panel.Width, panel.Height)
+        bmp.SetResolution(dpi, dpi)
+        panel.DrawToBitmap(bmp, New Rectangle(0, 0, panel.Width, panel.Height))
+        Return bmp
+    End Function
+
+    Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
+        Dim bmp As Bitmap = GetPanelImage(PanelStruk)
+        Dim newWidth As Integer = bmp.Width * 3.2
+        Dim newHeight As Integer = bmp.Height * 3.2
+        Dim resizedBmp As New Bitmap(bmp, newWidth, newHeight)
+        e.Graphics.DrawImage(resizedBmp, 0, 0, newWidth, newHeight)
+    End Sub
+
+    Private Sub PrintDocument1_EndPrint(sender As Object, e As PrintEventArgs) Handles PrintDocument1.EndPrint
+        MessageBox.Show("Struk pembayaran berhasil dicetak.", "Cetak Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        ClearForm()
+    End Sub
+
 End Class

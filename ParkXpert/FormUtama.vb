@@ -3,6 +3,8 @@
 Public Class frmUtama
     Private isInputFormVisible As Boolean = False
     Private isPembayaranFormVisible As Boolean = False
+    Private isKeuanganFormVisible As Boolean = False
+    Private isRiwayatFormVisible As Boolean = False
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
         koneksi()
@@ -29,6 +31,8 @@ Public Class frmUtama
             End If
             ' Set the pembayaran button to unchecked
             btnPembayaran.Checked = False
+            btnRiwayat.Checked = False
+            btnKeuangan.Checked = False
         Else ' Tombol dilepas
             If isInputFormVisible Then ' Jika form input sedang ditampilkan
                 TutupFormInput() ' Tutup form input
@@ -87,6 +91,8 @@ Public Class frmUtama
             End If
             ' Set the input button to unchecked
             btnInput.Checked = False
+            btnRiwayat.Checked = False
+            btnKeuangan.Checked = False
         Else ' Tombol dilepas
             If isPembayaranFormVisible Then ' Jika form pembayaran sedang ditampilkan
                 TutupFormPembayaran() ' Tutup form pembayaran
@@ -113,5 +119,110 @@ Public Class frmUtama
                 Exit For
             End If
         Next
+    End Sub
+
+    Private Sub btnKeuangan_CheckedChanged(sender As Object, e As EventArgs) Handles btnKeuangan.CheckedChanged
+        If btnKeuangan.Checked Then ' Tombol ditekan
+            If Not isKeuanganFormVisible Then ' Jika form keuangan belum ditampilkan
+                TampilkanFormKeuangan() ' Tampilkan form keuangan
+                isKeuanganFormVisible = True ' Set status form keuangan menjadi ditampilkan
+            End If
+            ' Set the pembayaran button to unchecked
+            btnInput.Checked = False
+            btnPembayaran.Checked = False
+            btnRiwayat.Checked = False
+        Else ' Tombol dilepas
+            If isKeuanganFormVisible Then ' Jika form keuangan sedang ditampilkan
+                TutupFormKeuangan() ' Tutup form keuangan
+                isKeuanganFormVisible = False ' Set status form keuangan menjadi disembunyikan
+            End If
+        End If
+    End Sub
+
+    Private Sub TampilkanFormKeuangan()
+        Dim frmKeuangan As New FormKeuangan()
+        frmKeuangan.TopLevel = False
+        frmKeuangan.FormBorderStyle = FormBorderStyle.None
+        frmKeuangan.Location = New Point(0, 0)
+
+        Body.Controls.Clear()
+        Body.Controls.Add(frmKeuangan)
+        frmKeuangan.Show()
+    End Sub
+
+    Private Sub TutupFormKeuangan()
+        ' Hapus form keuangan dari panel Body
+        For Each ctrl As Control In Body.Controls
+            If TypeOf ctrl Is FormKeuangan Then
+                Body.Controls.Remove(ctrl)
+                Exit For
+            End If
+        Next
+    End Sub
+
+    Private Sub btnRiwayat_CheckedChanged(sender As Object, e As EventArgs) Handles btnRiwayat.CheckedChanged
+        If btnRiwayat.Checked Then ' Tombol ditekan
+            If Not isRiwayatFormVisible Then ' Jika form riwayat belum ditampilkan
+                TampilkanFormRiwayat() ' Tampilkan form riwayat
+                isRiwayatFormVisible = True ' Set status form riwayat menjadi ditampilkan
+            End If
+            ' Pastikan tombol input dan pembayaran tidak tercentang
+            btnInput.Checked = False
+            btnPembayaran.Checked = False
+            btnKeuangan.Checked = False
+        Else ' Tombol dilepas
+            If isRiwayatFormVisible Then ' Jika form riwayat sedang ditampilkan
+                TutupFormRiwayat() ' Tutup form riwayat
+                isRiwayatFormVisible = False ' Set status form riwayat menjadi disembunyikan
+            End If
+        End If
+    End Sub
+
+    ' Metode untuk menampilkan form riwayat di panel Body
+    Private Sub TampilkanFormRiwayat()
+        Dim frmRiwayat As New FormRiwayat()
+        frmRiwayat.TopLevel = False
+        frmRiwayat.FormBorderStyle = FormBorderStyle.None
+        frmRiwayat.Location = New Point(0, 0)
+
+        Body.Controls.Clear()
+        Body.Controls.Add(frmRiwayat)
+        frmRiwayat.Show()
+    End Sub
+
+    ' Metode untuk menutup form riwayat dari panel Body
+    Private Sub TutupFormRiwayat()
+        ' Hapus form riwayat dari panel Body
+        For Each ctrl As Control In Body.Controls
+            If TypeOf ctrl Is FormRiwayat Then
+                Body.Controls.Remove(ctrl)
+                Exit For
+            End If
+        Next
+    End Sub
+
+    Private WithEvents tmrAnimation As New Timer()
+    Private Const Speed As Integer = 1 ' Kecepatan animasi yang lebih lambat
+    Private Const TimerInterval As Integer = 10 ' Interval timer yang lebih kecil untuk pergerakan lebih halus
+
+    Private Sub FormUtama_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        tmrAnimation.Interval = TimerInterval
+        tmrAnimation.Start()
+    End Sub
+
+    Private Sub tmrAnimation_Tick(sender As Object, e As EventArgs) Handles tmrAnimation.Tick
+        ' Ambil teks dari label
+        Dim text As String = lbljalan.Text
+
+        ' Geser teks ke kiri sesuai kecepatan
+        lbljalan.Left -= Speed
+
+        ' Jika teks keluar dari panel, kembalikan ke posisi awal di kanan panel
+        If lbljalan.Right < 0 Then
+            lbljalan.Left = Panel3.ClientSize.Width
+        End If
+
+        ' Memastikan responsivitas aplikasi
+        Application.DoEvents()
     End Sub
 End Class

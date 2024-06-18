@@ -24,12 +24,15 @@ Partial Class FormKeuangan
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormKeuangan))
         Panel1 = New Panel()
+        DataGridView1 = New DataGridView()
         Label1 = New Label()
         Panel2 = New Panel()
         cbFilter = New ComboBox()
         Panel3 = New Panel()
-        Button2 = New Button()
         btnRefresh = New Button()
+        btnImport = New Button()
+        Panel1.SuspendLayout()
+        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         Panel2.SuspendLayout()
         Panel3.SuspendLayout()
         SuspendLayout()
@@ -38,26 +41,37 @@ Partial Class FormKeuangan
         ' 
         Panel1.BackColor = Color.LightSteelBlue
         Panel1.BorderStyle = BorderStyle.FixedSingle
+        Panel1.Controls.Add(DataGridView1)
         Panel1.Location = New Point(12, 55)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(776, 275)
+        Panel1.Size = New Size(976, 418)
         Panel1.TabIndex = 0
+        ' 
+        ' DataGridView1
+        ' 
+        DataGridView1.BackgroundColor = Color.LightSteelBlue
+        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridView1.Location = New Point(3, 3)
+        DataGridView1.Name = "DataGridView1"
+        DataGridView1.Size = New Size(968, 410)
+        DataGridView1.TabIndex = 0
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Cambria", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(-8, 13)
+        Label1.Location = New Point(-4, 13)
         Label1.Name = "Label1"
-        Label1.Size = New Size(817, 28)
+        Label1.Size = New Size(1009, 28)
         Label1.TabIndex = 1
-        Label1.Text = "------------------------------ L A P O R A N   K E U A N G A N ------------------------------"
+        Label1.Text = "------------------------------------------ L A P O R A N   K E U A N G A N ------------------------------------------"
         ' 
         ' Panel2
         ' 
+        Panel2.BorderStyle = BorderStyle.FixedSingle
         Panel2.Controls.Add(cbFilter)
-        Panel2.Location = New Point(243, 347)
+        Panel2.Location = New Point(333, 494)
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(193, 100)
         Panel2.TabIndex = 2
@@ -66,6 +80,7 @@ Partial Class FormKeuangan
         ' 
         cbFilter.BackColor = SystemColors.Window
         cbFilter.FlatStyle = FlatStyle.Flat
+        cbFilter.Font = New Font("Cambria", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         cbFilter.FormattingEnabled = True
         cbFilter.Location = New Point(15, 39)
         cbFilter.Name = "cbFilter"
@@ -74,43 +89,44 @@ Partial Class FormKeuangan
         ' 
         ' Panel3
         ' 
-        Panel3.Controls.Add(Button2)
+        Panel3.BorderStyle = BorderStyle.FixedSingle
         Panel3.Controls.Add(btnRefresh)
-        Panel3.Location = New Point(435, 347)
+        Panel3.Controls.Add(btnImport)
+        Panel3.Location = New Point(525, 494)
         Panel3.Name = "Panel3"
         Panel3.Size = New Size(135, 100)
         Panel3.TabIndex = 3
-        ' 
-        ' Button2
-        ' 
-        Button2.FlatStyle = FlatStyle.Flat
-        Button2.Font = New Font("Cambria", 11.25F)
-        Button2.ForeColor = Color.White
-        Button2.Location = New Point(5, 53)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(125, 31)
-        Button2.TabIndex = 1
-        Button2.Text = "Import to Excel"
-        Button2.UseVisualStyleBackColor = True
         ' 
         ' btnRefresh
         ' 
         btnRefresh.FlatStyle = FlatStyle.Flat
         btnRefresh.Font = New Font("Cambria", 11.25F)
         btnRefresh.ForeColor = Color.White
-        btnRefresh.Location = New Point(5, 16)
+        btnRefresh.Location = New Point(4, 15)
         btnRefresh.Name = "btnRefresh"
         btnRefresh.Size = New Size(125, 31)
-        btnRefresh.TabIndex = 0
-        btnRefresh.Text = "Refresh Tabel"
+        btnRefresh.TabIndex = 2
+        btnRefresh.Text = "Refresh Table"
         btnRefresh.UseVisualStyleBackColor = True
+        ' 
+        ' btnImport
+        ' 
+        btnImport.FlatStyle = FlatStyle.Flat
+        btnImport.Font = New Font("Cambria", 11.25F)
+        btnImport.ForeColor = Color.White
+        btnImport.Location = New Point(4, 52)
+        btnImport.Name = "btnImport"
+        btnImport.Size = New Size(125, 31)
+        btnImport.TabIndex = 1
+        btnImport.Text = "Import to Excel"
+        btnImport.UseVisualStyleBackColor = True
         ' 
         ' FormKeuangan
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.MidnightBlue
-        ClientSize = New Size(800, 461)
+        ClientSize = New Size(1000, 617)
         Controls.Add(Panel3)
         Controls.Add(Panel2)
         Controls.Add(Label1)
@@ -119,6 +135,8 @@ Partial Class FormKeuangan
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "FormKeuangan"
         Text = "FormKeuangan"
+        Panel1.ResumeLayout(False)
+        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         Panel2.ResumeLayout(False)
         Panel3.ResumeLayout(False)
         ResumeLayout(False)
@@ -130,6 +148,7 @@ Partial Class FormKeuangan
     Friend WithEvents Panel2 As Panel
     Friend WithEvents cbFilter As ComboBox
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnImport As Button
+    Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents btnRefresh As Button
 End Class
