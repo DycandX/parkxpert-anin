@@ -3,47 +3,24 @@
   "WorkspaceRootPath": "E:\\_PROJECT\\ParkXpert-anin\\",
   "Documents": [
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{56596E88-FBDB-4C32-915E-95A81E08E84C}|ParkXpert\\ParkXpert.vbproj|e:\\_project\\parkxpert-anin\\parkxpert\\formriwayat.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{56596E88-FBDB-4C32-915E-95A81E08E84C}|ParkXpert\\ParkXpert.vbproj|solutionrelative:parkxpert\\formriwayat.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-=======
-      "AbsoluteMoniker": "D:0:0:{56596E88-FBDB-4C32-915E-95A81E08E84C}|ParkXpert\\ParkXpert.vbproj|e:\\_project\\parkxpert-anin\\parkxpert\\inputkendaraan.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{56596E88-FBDB-4C32-915E-95A81E08E84C}|ParkXpert\\ParkXpert.vbproj|solutionrelative:parkxpert\\inputkendaraan.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\_PROJECT\\ParkXpert-anin\\parkxpert\\formkarcis.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:parkxpert\\formkarcis.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56596E88-FBDB-4C32-915E-95A81E08E84C}|ParkXpert\\ParkXpert.vbproj|E:\\_PROJECT\\ParkXpert-anin\\parkxpert\\formpembayaran.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{56596E88-FBDB-4C32-915E-95A81E08E84C}|ParkXpert\\ParkXpert.vbproj|solutionrelative:parkxpert\\formpembayaran.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
->>>>>>> checkpoint3
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\_PROJECT\\ParkXpert-anin\\parkxpert\\inputkendaraan.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:parkxpert\\inputkendaraan.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56596E88-FBDB-4C32-915E-95A81E08E84C}|ParkXpert\\ParkXpert.vbproj|E:\\_PROJECT\\ParkXpert-anin\\parkxpert\\formpembayaran.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{56596E88-FBDB-4C32-915E-95A81E08E84C}|ParkXpert\\ParkXpert.vbproj|solutionrelative:parkxpert\\formpembayaran.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\_PROJECT\\ParkXpert-anin\\parkxpert\\formkeuangan.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:parkxpert\\formkeuangan.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{56596E88-FBDB-4C32-915E-95A81E08E84C}|ParkXpert\\ParkXpert.vbproj|E:\\_PROJECT\\ParkXpert-anin\\parkxpert\\formkarcis.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{56596E88-FBDB-4C32-915E-95A81E08E84C}|ParkXpert\\ParkXpert.vbproj|solutionrelative:parkxpert\\formkarcis.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-=======
-      "AbsoluteMoniker": "D:0:0:{56596E88-FBDB-4C32-915E-95A81E08E84C}|ParkXpert\\ParkXpert.vbproj|E:\\_PROJECT\\ParkXpert-anin\\parkxpert\\formutama.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{56596E88-FBDB-4C32-915E-95A81E08E84C}|ParkXpert\\ParkXpert.vbproj|solutionrelative:parkxpert\\formutama.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\FormRiwayat.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ParkXpert\\FormRiwayat.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56596E88-FBDB-4C32-915E-95A81E08E84C}|ParkXpert\\ParkXpert.vbproj|E:\\_PROJECT\\ParkXpert-anin\\parkxpert\\formutama.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{56596E88-FBDB-4C32-915E-95A81E08E84C}|ParkXpert\\ParkXpert.vbproj|solutionrelative:parkxpert\\formutama.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
->>>>>>> checkpoint3
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56596E88-FBDB-4C32-915E-95A81E08E84C}|ParkXpert\\ParkXpert.vbproj|E:\\_PROJECT\\ParkXpert-anin\\parkxpert\\inputkendaraan.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{56596E88-FBDB-4C32-915E-95A81E08E84C}|ParkXpert\\ParkXpert.vbproj|solutionrelative:parkxpert\\inputkendaraan.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{56596E88-FBDB-4C32-915E-95A81E08E84C}|ParkXpert\\ParkXpert.vbproj|E:\\_PROJECT\\ParkXpert-anin\\parkxpert\\formkeuangan.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{56596E88-FBDB-4C32-915E-95A81E08E84C}|ParkXpert\\ParkXpert.vbproj|solutionrelative:parkxpert\\formkeuangan.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-=======
-      "AbsoluteMoniker": "D:0:0:{56596E88-FBDB-4C32-915E-95A81E08E84C}|ParkXpert\\ParkXpert.vbproj|E:\\_PROJECT\\ParkXpert-anin\\parkxpert\\formpembayaran.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{56596E88-FBDB-4C32-915E-95A81E08E84C}|ParkXpert\\ParkXpert.vbproj|solutionrelative:parkxpert\\formpembayaran.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
->>>>>>> checkpoint3
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\_PROJECT\\ParkXpert-anin\\parkxpert\\formpembayaran.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:parkxpert\\formpembayaran.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -53,144 +30,67 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-=======
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "InputKendaraan.vb",
-              "DocumentMoniker": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\InputKendaraan.vb",
-              "RelativeDocumentMoniker": "ParkXpert\\InputKendaraan.vb",
-              "ToolTip": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\InputKendaraan.vb",
-              "RelativeToolTip": "ParkXpert\\InputKendaraan.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-11T13:04:09.105Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "FormUtama.vb",
-              "DocumentMoniker": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\FormUtama.vb",
-              "RelativeDocumentMoniker": "ParkXpert\\FormUtama.vb",
-              "ToolTip": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\FormUtama.vb",
-              "RelativeToolTip": "ParkXpert\\FormUtama.vb",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAtwFcAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-06T05:44:40.389Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormUtama.vb [Design]",
-              "DocumentMoniker": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\FormUtama.vb",
-              "RelativeDocumentMoniker": "ParkXpert\\FormUtama.vb",
-              "ToolTip": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\FormUtama.vb [Design]",
-              "RelativeToolTip": "ParkXpert\\FormUtama.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-05T15:38:22.997Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormPembayaran.vb",
-              "DocumentMoniker": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\FormPembayaran.vb",
-              "RelativeDocumentMoniker": "ParkXpert\\FormPembayaran.vb",
-              "ToolTip": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\FormPembayaran.vb",
-              "RelativeToolTip": "ParkXpert\\FormPembayaran.vb",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAIwGIAAABoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2024-06-11T11:38:50.566Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
->>>>>>> checkpoint3
               "Title": "FormPembayaran.vb [Design]",
               "DocumentMoniker": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\FormPembayaran.vb",
               "RelativeDocumentMoniker": "ParkXpert\\FormPembayaran.vb",
               "ToolTip": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\FormPembayaran.vb [Design]",
               "RelativeToolTip": "ParkXpert\\FormPembayaran.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-<<<<<<< HEAD
-              "WhenOpened": "2024-06-05T04:35:05.667Z"
+              "WhenOpened": "2024-06-18T07:09:44.282Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "FormRiwayat.vb [Design]",
               "DocumentMoniker": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\FormRiwayat.vb",
               "RelativeDocumentMoniker": "ParkXpert\\FormRiwayat.vb",
               "ToolTip": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\FormRiwayat.vb [Design]",
               "RelativeToolTip": "ParkXpert\\FormRiwayat.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-04T19:26:35.194Z",
+              "WhenOpened": "2024-06-18T07:09:45.569Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "FormKeuangan.vb [Design]",
               "DocumentMoniker": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\FormKeuangan.vb",
               "RelativeDocumentMoniker": "ParkXpert\\FormKeuangan.vb",
               "ToolTip": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\FormKeuangan.vb [Design]",
               "RelativeToolTip": "ParkXpert\\FormKeuangan.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-04T19:01:07.533Z"
+              "WhenOpened": "2024-06-18T07:09:45.59Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-=======
-              "WhenOpened": "2024-06-11T11:47:43.429Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
->>>>>>> checkpoint3
+              "DocumentIndex": 1,
               "Title": "InputKendaraan.vb [Design]",
               "DocumentMoniker": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\InputKendaraan.vb",
               "RelativeDocumentMoniker": "ParkXpert\\InputKendaraan.vb",
               "ToolTip": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\InputKendaraan.vb [Design]",
               "RelativeToolTip": "ParkXpert\\InputKendaraan.vb [Design]",
-<<<<<<< HEAD
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-04T18:58:33.977Z"
+              "WhenOpened": "2024-06-18T07:09:45.591Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "FormKarcis.vb [Design]",
               "DocumentMoniker": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\FormKarcis.vb",
               "RelativeDocumentMoniker": "ParkXpert\\FormKarcis.vb",
               "ToolTip": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\FormKarcis.vb [Design]",
               "RelativeToolTip": "ParkXpert\\FormKarcis.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-04T17:59:05.514Z"
-=======
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2024-06-11T13:04:03.307Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FormPembayaran.Designer.vb",
-              "DocumentMoniker": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\FormPembayaran.Designer.vb",
-              "RelativeDocumentMoniker": "ParkXpert\\FormPembayaran.Designer.vb",
-              "ToolTip": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\FormPembayaran.Designer.vb",
-              "RelativeToolTip": "ParkXpert\\FormPembayaran.Designer.vb",
-              "ViewState": "AQIAADoAAAAAAAAAAAAjwEQAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-11T12:03:14.418Z"
->>>>>>> checkpoint3
+              "WhenOpened": "2024-06-18T07:09:45.593Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
