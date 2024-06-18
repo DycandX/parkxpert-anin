@@ -9,6 +9,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
+=======
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>9</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>00020813-0000-0000-c000-000000000046</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+>>>>>>> checkpoint3
     <Import Include="System.Data" />
     <Import Include="System.Drawing" />
     <Import Include="System.Windows.Forms" />
@@ -16,6 +31,10 @@
 
   <ItemGroup>
     <PackageReference Include="MySql.Data" Version="8.4.0" />
+<<<<<<< HEAD
+=======
+    <PackageReference Include="QRCoder" Version="1.5.1" />
+>>>>>>> checkpoint3
   </ItemGroup>
 
   <ItemGroup>

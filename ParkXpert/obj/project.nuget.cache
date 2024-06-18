@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "arscKMHWkw4AOiCowG/6Y6HdRmcoI1XCyhkRLBoUXpF/FzP4hjOtDPiWvs6GFBbxMpV90OezPFA3NnW6P7XGSQ==",
+=======
+  "dgSpecHash": "ThRAK6Ol+XjOUuiWO+XKsPg7ZlSyq3Lej6t3BUPFP8QBLJ6N8uerGUInhrlb048qyTP5pCmM8VFvzsXupGq0Bg==",
+>>>>>>> checkpoint3
   "success": true,
   "projectFilePath": "E:\\_PROJECT\\ParkXpert-anin\\ParkXpert\\ParkXpert.vbproj",
   "expectedPackageFiles": [
@@ -11,12 +15,22 @@
     "C:\\Users\\zulvikar\\.nuget\\packages\\k4os.hash.xxhash\\1.0.8\\k4os.hash.xxhash.1.0.8.nupkg.sha512",
     "C:\\Users\\zulvikar\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\zulvikar\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+<<<<<<< HEAD
     "C:\\Users\\zulvikar\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\zulvikar\\.nuget\\packages\\mysql.data\\8.4.0\\mysql.data.8.4.0.nupkg.sha512",
     "C:\\Users\\zulvikar\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\zulvikar\\.nuget\\packages\\system.configuration.configurationmanager\\4.4.1\\system.configuration.configurationmanager.4.4.1.nupkg.sha512",
     "C:\\Users\\zulvikar\\.nuget\\packages\\system.diagnostics.diagnosticsource\\7.0.2\\system.diagnostics.diagnosticsource.7.0.2.nupkg.sha512",
     "C:\\Users\\zulvikar\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+=======
+    "C:\\Users\\zulvikar\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\zulvikar\\.nuget\\packages\\mysql.data\\8.4.0\\mysql.data.8.4.0.nupkg.sha512",
+    "C:\\Users\\zulvikar\\.nuget\\packages\\qrcoder\\1.5.1\\qrcoder.1.5.1.nupkg.sha512",
+    "C:\\Users\\zulvikar\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\zulvikar\\.nuget\\packages\\system.configuration.configurationmanager\\4.4.1\\system.configuration.configurationmanager.4.4.1.nupkg.sha512",
+    "C:\\Users\\zulvikar\\.nuget\\packages\\system.diagnostics.diagnosticsource\\7.0.2\\system.diagnostics.diagnosticsource.7.0.2.nupkg.sha512",
+    "C:\\Users\\zulvikar\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+>>>>>>> checkpoint3
     "C:\\Users\\zulvikar\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
     "C:\\Users\\zulvikar\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
     "C:\\Users\\zulvikar\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
