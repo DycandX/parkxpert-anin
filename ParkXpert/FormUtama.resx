@@ -166,8 +166,6 @@
         K6UIXQAAAABJRU5ErkJggg==
 </value>
   </data>
-<<<<<<< HEAD
-=======
   <data name="btnKeuangan.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -224,7 +222,6 @@
         YyyB57S7P0HWOmbLlihRokSJfxOVyg/fZuUrYy0/vQAAAABJRU5ErkJggg==
 </value>
   </data>
->>>>>>> checkpoint3
   <data name="btnInput.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -240,12 +237,9 @@
         RU5ErkJggg==
 </value>
   </data>
-<<<<<<< HEAD
-=======
   <metadata name="Timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
->>>>>>> checkpoint3
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAAAAAAAEAIACMIAAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAEAAAABAAgGAAAAXHKoZgAAAAFv

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-﻿Public Class FormKeuangan
-
-End Class
-=======
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class FormKeuangan
@@ -156,4 +151,3 @@ Public Class FormKeuangan
         End Try
     End Sub
 End Class
->>>>>>> checkpoint3

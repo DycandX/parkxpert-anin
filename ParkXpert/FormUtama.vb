@@ -1,13 +1,10 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class frmUtama
-<<<<<<< HEAD
-=======
     Private isInputFormVisible As Boolean = False
     Private isPembayaranFormVisible As Boolean = False
     Private isKeuanganFormVisible As Boolean = False
     Private isRiwayatFormVisible As Boolean = False
->>>>>>> checkpoint3
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
         koneksi()
@@ -27,11 +24,6 @@ Public Class frmUtama
     End Sub
 
     Private Sub btnInput_CheckedChanged(sender As Object, e As EventArgs) Handles btnInput.CheckedChanged
-<<<<<<< HEAD
-        frmInput.Show()
-    End Sub
-End Class
-=======
         If btnInput.Checked Then ' Tombol ditekan
             If Not isInputFormVisible Then ' Jika form input belum ditampilkan
                 TampilkanFormInput() ' Tampilkan form input
@@ -234,4 +226,3 @@ End Class
         Application.DoEvents()
     End Sub
 End Class
->>>>>>> checkpoint3

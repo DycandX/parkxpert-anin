@@ -68,11 +68,7 @@ Partial Class frmInput
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Cambria", 11.25F)
-<<<<<<< HEAD
-        Label6.Location = New Point(15, 154)
-=======
         Label6.Location = New Point(17, 154)
->>>>>>> checkpoint3
         Label6.Name = "Label6"
         Label6.Size = New Size(38, 17)
         Label6.TabIndex = 12
@@ -81,11 +77,7 @@ Partial Class frmInput
         ' txttarif
         ' 
         txttarif.BorderStyle = BorderStyle.FixedSingle
-<<<<<<< HEAD
-        txttarif.Location = New Point(128, 152)
-=======
         txttarif.Location = New Point(130, 152)
->>>>>>> checkpoint3
         txttarif.Name = "txttarif"
         txttarif.Size = New Size(200, 23)
         txttarif.TabIndex = 11
@@ -97,11 +89,7 @@ Partial Class frmInput
         Label5.BorderStyle = BorderStyle.FixedSingle
         Label5.Font = New Font("Cambria", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label5.ForeColor = Color.Black
-<<<<<<< HEAD
-        Label5.Location = New Point(75, 17)
-=======
         Label5.Location = New Point(77, 17)
->>>>>>> checkpoint3
         Label5.Name = "Label5"
         Label5.Padding = New Padding(10, 5, 10, 5)
         Label5.Size = New Size(204, 34)
@@ -112,11 +100,7 @@ Partial Class frmInput
         ' 
         DateTimePicker1.CustomFormat = "    dd / MM / yyyy  -  HH : mm : ss"
         DateTimePicker1.Format = DateTimePickerFormat.Custom
-<<<<<<< HEAD
-        DateTimePicker1.Location = New Point(128, 231)
-=======
         DateTimePicker1.Location = New Point(130, 231)
->>>>>>> checkpoint3
         DateTimePicker1.Name = "DateTimePicker1"
         DateTimePicker1.Size = New Size(200, 23)
         DateTimePicker1.TabIndex = 10
@@ -128,11 +112,7 @@ Partial Class frmInput
         btnClear.FlatStyle = FlatStyle.Popup
         btnClear.Font = New Font("Cambria", 9.75F, FontStyle.Bold)
         btnClear.ForeColor = Color.White
-<<<<<<< HEAD
-        btnClear.Location = New Point(253, 279)
-=======
         btnClear.Location = New Point(255, 279)
->>>>>>> checkpoint3
         btnClear.Name = "btnClear"
         btnClear.Size = New Size(75, 23)
         btnClear.TabIndex = 9
@@ -146,11 +126,7 @@ Partial Class frmInput
         btnSimpan.FlatStyle = FlatStyle.Popup
         btnSimpan.Font = New Font("Cambria", 9.75F, FontStyle.Bold)
         btnSimpan.ForeColor = Color.White
-<<<<<<< HEAD
-        btnSimpan.Location = New Point(128, 279)
-=======
         btnSimpan.Location = New Point(130, 279)
->>>>>>> checkpoint3
         btnSimpan.Name = "btnSimpan"
         btnSimpan.Size = New Size(75, 23)
         btnSimpan.TabIndex = 8
@@ -161,11 +137,7 @@ Partial Class frmInput
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Cambria", 11.25F)
-<<<<<<< HEAD
-        Label4.Location = New Point(15, 233)
-=======
         Label4.Location = New Point(17, 233)
->>>>>>> checkpoint3
         Label4.Name = "Label4"
         Label4.Size = New Size(93, 17)
         Label4.TabIndex = 7
@@ -175,11 +147,7 @@ Partial Class frmInput
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Cambria", 11.25F)
-<<<<<<< HEAD
-        Label3.Location = New Point(15, 193)
-=======
         Label3.Location = New Point(17, 193)
->>>>>>> checkpoint3
         Label3.Name = "Label3"
         Label3.Size = New Size(80, 17)
         Label3.TabIndex = 6
@@ -189,11 +157,7 @@ Partial Class frmInput
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Cambria", 11.25F)
-<<<<<<< HEAD
-        Label2.Location = New Point(15, 116)
-=======
         Label2.Location = New Point(17, 116)
->>>>>>> checkpoint3
         Label2.Name = "Label2"
         Label2.Size = New Size(108, 17)
         Label2.TabIndex = 5
@@ -203,11 +167,7 @@ Partial Class frmInput
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Cambria", 11.25F)
-<<<<<<< HEAD
-        Label1.Location = New Point(15, 76)
-=======
         Label1.Location = New Point(17, 76)
->>>>>>> checkpoint3
         Label1.Name = "Label1"
         Label1.Size = New Size(57, 17)
         Label1.TabIndex = 4
@@ -216,13 +176,8 @@ Partial Class frmInput
         ' cbPetugas
         ' 
         cbPetugas.FormattingEnabled = True
-<<<<<<< HEAD
-        cbPetugas.Items.AddRange(New Object() {"Anindita Rahma", "Sahardian Putra"})
-        cbPetugas.Location = New Point(128, 74)
-=======
         cbPetugas.Items.AddRange(New Object() {"Anindita Rahma", "Sahardian Putra", "Zulvikar Kharisma"})
         cbPetugas.Location = New Point(130, 74)
->>>>>>> checkpoint3
         cbPetugas.Name = "cbPetugas"
         cbPetugas.Size = New Size(200, 23)
         cbPetugas.TabIndex = 2
@@ -230,11 +185,7 @@ Partial Class frmInput
         ' txtNopol
         ' 
         txtNopol.BorderStyle = BorderStyle.FixedSingle
-<<<<<<< HEAD
-        txtNopol.Location = New Point(128, 191)
-=======
         txtNopol.Location = New Point(130, 191)
->>>>>>> checkpoint3
         txtNopol.Name = "txtNopol"
         txtNopol.Size = New Size(200, 23)
         txtNopol.TabIndex = 1
@@ -243,11 +194,7 @@ Partial Class frmInput
         ' 
         cbKendaraan.FormattingEnabled = True
         cbKendaraan.Items.AddRange(New Object() {"Motor", "Mobil"})
-<<<<<<< HEAD
-        cbKendaraan.Location = New Point(128, 113)
-=======
         cbKendaraan.Location = New Point(130, 113)
->>>>>>> checkpoint3
         cbKendaraan.Name = "cbKendaraan"
         cbKendaraan.Size = New Size(200, 23)
         cbKendaraan.TabIndex = 0

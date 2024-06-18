@@ -38,10 +38,6 @@ Public Class frmLogin
                     frmUtama.profilUname.Text = DR.Item("ID")
                     frmUtama.profilNama.Text = DR.Item("Nama")
                     frmUtama.profilAkses.Text = DR.Item("Akses")
-<<<<<<< HEAD
-                    'frmKendaraan.inputPetugas.Text = DR.Item("Nama")
-=======
->>>>>>> checkpoint3
                     koneksi()
                     CMD = New MySqlCommand("UPDATE pegawai set Status = '" & "Online" & "' WHERE BINARY ID = '" & txtuname.Text & "'", conn)
                     CMD.ExecuteNonQuery()
@@ -77,10 +73,6 @@ Public Class frmLogin
             Exit Sub
         End If
 
-<<<<<<< HEAD
-
-=======
->>>>>>> checkpoint3
         Label1.Text = Str.Substring(0, Hitung)
         Hitung += 1
     End Sub

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-﻿Public Class FormPembayaran
-
-End Class
-=======
 ﻿Imports MySql.Data.MySqlClient
 Imports System.Drawing.Printing
 
@@ -222,4 +217,3 @@ Public Class FormPembayaran
     End Sub
 
 End Class
->>>>>>> checkpoint3

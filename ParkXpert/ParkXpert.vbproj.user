@@ -25,11 +25,8 @@
     <Compile Update="InputKendaraan.vb">
       <SubType>Form</SubType>
     </Compile>
-<<<<<<< HEAD
     <Compile Update="ParkXpert\Form1.vb">
       <SubType>Form</SubType>
     </Compile>
-=======
->>>>>>> checkpoint3
   </ItemGroup>
 </Project>

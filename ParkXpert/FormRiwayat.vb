@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-﻿Public Class FormRiwayat
-    
-End Class
-=======
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class FormRiwayat
@@ -94,4 +89,3 @@ Public Class FormRiwayat
         End If
     End Sub
 End Class
->>>>>>> checkpoint3

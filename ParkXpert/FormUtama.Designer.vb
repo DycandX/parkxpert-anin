@@ -22,10 +22,7 @@ Partial Class frmUtama
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-<<<<<<< HEAD
-=======
         components = New ComponentModel.Container()
->>>>>>> checkpoint3
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmUtama))
         Panel1 = New Panel()
         Panel6 = New Panel()
@@ -35,12 +32,9 @@ Partial Class frmUtama
         profilNama = New Label()
         PictureBox1 = New PictureBox()
         Panel2 = New Panel()
-<<<<<<< HEAD
-=======
         btnKeuangan = New CheckBox()
         btnRiwayat = New CheckBox()
         btnPembayaran = New CheckBox()
->>>>>>> checkpoint3
         btnInput = New CheckBox()
         Panel3 = New Panel()
         Panel4 = New Panel()
@@ -50,18 +44,12 @@ Partial Class frmUtama
         btnexit = New Button()
         btnmin = New Button()
         Body = New Panel()
-<<<<<<< HEAD
-        Panel1.SuspendLayout()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
-        Panel2.SuspendLayout()
-=======
         lbljalan = New Label()
         Timer1 = New Timer(components)
         Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel2.SuspendLayout()
         Panel3.SuspendLayout()
->>>>>>> checkpoint3
         Panel5.SuspendLayout()
         Panel7.SuspendLayout()
         SuspendLayout()
@@ -69,10 +57,7 @@ Partial Class frmUtama
         ' Panel1
         ' 
         Panel1.BackColor = Color.MidnightBlue
-<<<<<<< HEAD
-=======
         Panel1.BorderStyle = BorderStyle.FixedSingle
->>>>>>> checkpoint3
         Panel1.Controls.Add(Panel6)
         Panel1.Controls.Add(Label1)
         Panel1.Controls.Add(profilAkses)
@@ -151,20 +136,15 @@ Partial Class frmUtama
         ' Panel2
         ' 
         Panel2.BackColor = Color.MidnightBlue
-<<<<<<< HEAD
-=======
         Panel2.Controls.Add(btnKeuangan)
         Panel2.Controls.Add(btnRiwayat)
         Panel2.Controls.Add(btnPembayaran)
->>>>>>> checkpoint3
         Panel2.Controls.Add(btnInput)
         Panel2.Location = New Point(0, 140)
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(300, 407)
         Panel2.TabIndex = 1
         ' 
-<<<<<<< HEAD
-=======
         ' btnKeuangan
         ' 
         btnKeuangan.Appearance = Appearance.Button
@@ -219,7 +199,6 @@ Partial Class frmUtama
         btnPembayaran.TextImageRelation = TextImageRelation.ImageBeforeText
         btnPembayaran.UseVisualStyleBackColor = False
         ' 
->>>>>>> checkpoint3
         ' btnInput
         ' 
         btnInput.Appearance = Appearance.Button
@@ -230,11 +209,7 @@ Partial Class frmUtama
         btnInput.ForeColor = Color.White
         btnInput.Image = CType(resources.GetObject("btnInput.Image"), Image)
         btnInput.ImageAlign = ContentAlignment.MiddleLeft
-<<<<<<< HEAD
-        btnInput.Location = New Point(-1, -1)
-=======
         btnInput.Location = New Point(-1, 5)
->>>>>>> checkpoint3
         btnInput.Name = "btnInput"
         btnInput.Size = New Size(305, 46)
         btnInput.TabIndex = 1
@@ -245,11 +220,8 @@ Partial Class frmUtama
         ' Panel3
         ' 
         Panel3.BackColor = Color.MidnightBlue
-<<<<<<< HEAD
-=======
         Panel3.BorderStyle = BorderStyle.FixedSingle
         Panel3.Controls.Add(lbljalan)
->>>>>>> checkpoint3
         Panel3.Location = New Point(0, 548)
         Panel3.Name = "Panel3"
         Panel3.Size = New Size(300, 93)
@@ -258,10 +230,7 @@ Partial Class frmUtama
         ' Panel4
         ' 
         Panel4.BackColor = Color.LimeGreen
-<<<<<<< HEAD
-=======
         Panel4.BorderStyle = BorderStyle.FixedSingle
->>>>>>> checkpoint3
         Panel4.Location = New Point(0, 640)
         Panel4.Name = "Panel4"
         Panel4.Size = New Size(1300, 8)
@@ -270,10 +239,7 @@ Partial Class frmUtama
         ' Panel5
         ' 
         Panel5.BackColor = Color.LimeGreen
-<<<<<<< HEAD
-=======
         Panel5.BorderStyle = BorderStyle.FixedSingle
->>>>>>> checkpoint3
         Panel5.Controls.Add(Panel7)
         Panel5.Controls.Add(btnexit)
         Panel5.Controls.Add(btnmin)
@@ -333,8 +299,6 @@ Partial Class frmUtama
         Body.Size = New Size(1000, 617)
         Body.TabIndex = 4
         ' 
-<<<<<<< HEAD
-=======
         ' lbljalan
         ' 
         lbljalan.AutoSize = True
@@ -347,7 +311,6 @@ Partial Class frmUtama
         lbljalan.TabIndex = 5
         lbljalan.Text = "HAVE A NICE DAY!"
         ' 
->>>>>>> checkpoint3
         ' frmUtama
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -370,11 +333,8 @@ Partial Class frmUtama
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
-<<<<<<< HEAD
-=======
         Panel3.ResumeLayout(False)
         Panel3.PerformLayout()
->>>>>>> checkpoint3
         Panel5.ResumeLayout(False)
         Panel7.ResumeLayout(False)
         ResumeLayout(False)
@@ -397,12 +357,9 @@ Partial Class frmUtama
     Friend WithEvents Panel7 As Panel
     Friend WithEvents Panel8 As Panel
     Friend WithEvents Body As Panel
-<<<<<<< HEAD
-=======
     Friend WithEvents btnPembayaran As CheckBox
     Friend WithEvents btnKeuangan As CheckBox
     Friend WithEvents btnRiwayat As CheckBox
     Friend WithEvents lbljalan As Label
     Friend WithEvents Timer1 As Timer
->>>>>>> checkpoint3
 End Class

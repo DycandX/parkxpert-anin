@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-﻿Public Class FormKarcis
-
-End Class
-=======
 ﻿Imports QRCoder
 Imports System.Drawing.Imaging
 Imports MySql.Data.MySqlClient
@@ -126,4 +121,3 @@ Public Class FormKarcis
     End Sub
 
 End Class
->>>>>>> checkpoint3

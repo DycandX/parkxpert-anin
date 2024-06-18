@@ -8,12 +8,8 @@
     ".NETCoreApp,Version=v8.0": {
       "ParkXpert/1.0.0": {
         "dependencies": {
-<<<<<<< HEAD
-          "MySql.Data": "8.4.0"
-=======
           "MySql.Data": "8.4.0",
           "QRCoder": "1.5.1"
->>>>>>> checkpoint3
         },
         "runtime": {
           "ParkXpert.dll": {}
@@ -66,15 +62,7 @@
       },
       "Microsoft.NETCore.Platforms/3.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
-<<<<<<< HEAD
-      "Microsoft.Win32.SystemEvents/4.7.0": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.1.0"
-        }
-      },
-=======
       "Microsoft.Win32.SystemEvents/6.0.0": {},
->>>>>>> checkpoint3
       "MySql.Data/8.4.0": {
         "dependencies": {
           "BouncyCastle.Cryptography": "2.2.1",
@@ -125,8 +113,6 @@
           }
         }
       },
-<<<<<<< HEAD
-=======
       "QRCoder/1.5.1": {
         "dependencies": {
           "System.Drawing.Common": "6.0.0"
@@ -138,7 +124,6 @@
           }
         }
       },
->>>>>>> checkpoint3
       "System.Buffers/4.5.1": {},
       "System.Configuration.ConfigurationManager/4.4.1": {
         "dependencies": {
@@ -146,16 +131,9 @@
         }
       },
       "System.Diagnostics.DiagnosticSource/7.0.2": {},
-<<<<<<< HEAD
-      "System.Drawing.Common/4.7.0": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.1.0",
-          "Microsoft.Win32.SystemEvents": "4.7.0"
-=======
       "System.Drawing.Common/6.0.0": {
         "dependencies": {
           "Microsoft.Win32.SystemEvents": "6.0.0"
->>>>>>> checkpoint3
         }
       },
       "System.IO/4.3.0": {
@@ -247,11 +225,7 @@
       "System.Threading.Tasks.Extensions/4.5.4": {},
       "System.Windows.Extensions/4.7.0": {
         "dependencies": {
-<<<<<<< HEAD
-          "System.Drawing.Common": "4.7.0"
-=======
           "System.Drawing.Common": "6.0.0"
->>>>>>> checkpoint3
         }
       },
       "ZstdSharp.Port/0.7.1": {
@@ -319,21 +293,12 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
-<<<<<<< HEAD
-    "Microsoft.Win32.SystemEvents/4.7.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-mtVirZr++rq+XCDITMUdnETD59XoeMxSpLRIII7JRI6Yj0LEDiO1pPn0ktlnIj12Ix8bfvQqQDMMIF9wC98oCA==",
-      "path": "microsoft.win32.systemevents/4.7.0",
-      "hashPath": "microsoft.win32.systemevents.4.7.0.nupkg.sha512"
-=======
     "Microsoft.Win32.SystemEvents/6.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A==",
       "path": "microsoft.win32.systemevents/6.0.0",
       "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
->>>>>>> checkpoint3
     },
     "MySql.Data/8.4.0": {
       "type": "package",
@@ -342,8 +307,6 @@
       "path": "mysql.data/8.4.0",
       "hashPath": "mysql.data.8.4.0.nupkg.sha512"
     },
-<<<<<<< HEAD
-=======
     "QRCoder/1.5.1": {
       "type": "package",
       "serviceable": true,
@@ -351,7 +314,6 @@
       "path": "qrcoder/1.5.1",
       "hashPath": "qrcoder.1.5.1.nupkg.sha512"
     },
->>>>>>> checkpoint3
     "System.Buffers/4.5.1": {
       "type": "package",
       "serviceable": true,
@@ -373,21 +335,12 @@
       "path": "system.diagnostics.diagnosticsource/7.0.2",
       "hashPath": "system.diagnostics.diagnosticsource.7.0.2.nupkg.sha512"
     },
-<<<<<<< HEAD
-    "System.Drawing.Common/4.7.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-v+XbyYHaZjDfn0ENmJEV1VYLgGgCTx1gnfOBcppowbpOAriglYgGCvFCPr2EEZyBvXlpxbEsTwkOlInl107ahA==",
-      "path": "system.drawing.common/4.7.0",
-      "hashPath": "system.drawing.common.4.7.0.nupkg.sha512"
-=======
     "System.Drawing.Common/6.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-NfuoKUiP2nUWwKZN6twGqXioIe1zVD0RIj2t976A+czLHr2nY454RwwXs6JU9Htc6mwqL6Dn/nEL3dpVf2jOhg==",
       "path": "system.drawing.common/6.0.0",
       "hashPath": "system.drawing.common.6.0.0.nupkg.sha512"
->>>>>>> checkpoint3
     },
     "System.IO/4.3.0": {
       "type": "package",

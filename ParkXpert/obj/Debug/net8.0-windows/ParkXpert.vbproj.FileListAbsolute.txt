@@ -37,12 +37,6 @@ C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\ParkXpert\obj\Debug\net8.0-wi
 C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.FormKeuangan.resources
 C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.FormPembayaran.resources
 C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.FormRiwayat.resources
-<<<<<<< HEAD
-E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.vbproj.AssemblyReference.cache
-E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.dll
-E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\refint\ParkXpert.dll
-E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.pdb
-=======
 C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.sourcelink.json
 E:\_PROJECT\ParkXpert-anin\ParkXpert\bin\Debug\net8.0-windows\ParkXpert.exe
 E:\_PROJECT\ParkXpert-anin\ParkXpert\bin\Debug\net8.0-windows\ParkXpert.deps.json
@@ -130,4 +124,3 @@ C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin
 C:\Users\HP\Documents\Visual Studio 2022\ParkXpert\parkxpert-anin\parkxpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.vbproj.ResolveComReference.cache
 E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\Interop.Microsoft.Office.Interop.Excel.dll
 E:\_PROJECT\ParkXpert-anin\ParkXpert\obj\Debug\net8.0-windows\ParkXpert.vbproj.ResolveComReference.cache
->>>>>>> checkpoint3
